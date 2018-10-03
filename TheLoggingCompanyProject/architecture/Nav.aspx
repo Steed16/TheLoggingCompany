@@ -1,4 +1,6 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="nav.ascx.cs" Inherits="TheLoggingCompanyProject.nav" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Nav.aspx.cs" Inherits="TheLoggingCompanyProject.Nav" %>
+
+
 
 
 <ul id="nav" runat="server">
@@ -8,4 +10,5 @@
     <li><a href="#">Store</a></li>
     <li><a href="#">Sign in/up</a></li>
 </ul>
-<div id="customOutput" runat="server"></div>
+
+

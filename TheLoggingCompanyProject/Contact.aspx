@@ -1,5 +1,7 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Contact.ascx.cs" Inherits="TheLoggingCompanyProject.Contact" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="TheLoggingCompanyProject.Contact" %>
+
 <!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8" />

@@ -1,0 +1,51 @@
+﻿body {
+
+}
+
+.container {
+    width: 100%;
+    background-color: white;
+    top: 0;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    top: 0;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    background-color: white;
+    top: 0;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+        text-decoration: none;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        padding: 10px, 10px;
+}
+
+li a:hover{
+    background-color: black;
+    color: white;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    color: black;
+
+}
+
