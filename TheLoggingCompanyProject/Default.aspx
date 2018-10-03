@@ -18,16 +18,21 @@
 </head>
 <body>
     <div class="container">
-        <nav class="Nav">
-            <h1>The Logging Company</h1>
-            <ul>                 
-                <li> <a href="Default.aspx">Home</a></li>  
-                <li> <a href="#">Game</a></li>  
-                <li> <a href="#">Shop</a></li>  
-                <li> <a href="Contact.aspx">Contact</a></li>  
-                <li> <a href="#">Sign in/up</a></li>  
-            </ul>   
-        </nav>
+        <div class="Nav">
+            <div class="heading">
+                <h1>The Logging Company</h1>
+            </div> 
+                <div id="navigation">
+                    <ul>                 
+                        <li> <a href="Default.aspx">Home</a></li>  
+                        <li> <a href="Game.aspx">Game</a></li>  
+                        <li> <a href="Store.aspx">Shop</a></li>  
+                        <li> <a href="Contact.aspx">Contact</a></li>  
+                        <li> <a href="About.aspx">About</a></li>
+                        <li> <a href="Account.aspx">Sign in/up</a></li>  
+                    </ul>               
+                </div>
+        </div>
     </div>
 </body>
 </html>
