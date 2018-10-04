@@ -32,7 +32,9 @@
                         <li> <a href="Account.aspx">Sign in/up</a></li>  
                     </ul>               
                 </div>
+
         </div>
     </div>
+    
 </body>
 </html>
