@@ -69,13 +69,14 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Account.aspx" />
+    <Content Include="architecture\Nav.ascx" />
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="architecture\Nav.aspx" />
     <Content Include="Game.aspx" />
     <Content Include="Store.aspx" />
     <Content Include="wwwroot\css\styles.css" />
     <Content Include="Web.config" />
+    <Content Include="wwwroot\images\beaver.gif" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -92,6 +93,13 @@
     <Compile Include="Account.aspx.designer.cs">
       <DependentUpon>Account.aspx</DependentUpon>
     </Compile>
+    <Compile Include="architecture\Nav.ascx.cs">
+      <DependentUpon>Nav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="architecture\Nav.ascx.designer.cs">
+      <DependentUpon>Nav.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -105,13 +113,6 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="architecture\Nav.aspx.cs">
-      <DependentUpon>Nav.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="architecture\Nav.aspx.designer.cs">
-      <DependentUpon>Nav.aspx</DependentUpon>
     </Compile>
     <Compile Include="Game.aspx.cs">
       <DependentUpon>Game.aspx</DependentUpon>

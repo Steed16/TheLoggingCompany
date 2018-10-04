@@ -29,8 +29,9 @@ ul {
     background-color: green;
     margin: auto;
     overflow: hidden;
-    padding: 5px , 0, 5px, 0;
+    padding: 2px , 2px, 2px, 2px;
     height: 30px;
+
 
 }
 
@@ -51,7 +52,7 @@ li a:hover{
 
 a {
     display: block;
-    padding: 10px; 
+    padding: 3px, 0, 3px, 0; 
     color: black;
 
 }
