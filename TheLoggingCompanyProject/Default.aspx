@@ -23,6 +23,12 @@
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
-    
+    <div class="body">
+        <h3>Stuff here</h3>
+    </div>
+    <div class="footer">
+        <h2>Console: </h2>
+    </div>    
 </body>
+
 </html>
