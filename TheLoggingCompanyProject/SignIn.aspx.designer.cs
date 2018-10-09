@@ -10,7 +10,7 @@
 namespace TheLoggingCompanyProject {
     
     
-    public partial class About {
+    public partial class SignIn {
         
         /// <summary>
         /// navHtml control.
@@ -31,21 +31,39 @@ namespace TheLoggingCompanyProject {
         protected global::System.Web.UI.HtmlControls.HtmlForm form2;
         
         /// <summary>
-        /// Label1 control.
+        /// userNameid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Label1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl userNameid;
         
         /// <summary>
-        /// Text1 control.
+        /// userNameinput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText userNameinput;
+        
+        /// <summary>
+        /// passwordid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl passwordid;
+        
+        /// <summary>
+        /// passwordInput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText passwordInput;
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="TheLoggingCompanyProject.Contact" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignIn.aspx.cs" Inherits="TheLoggingCompanyProject.SignIn" %>
 <%@ Register TagPrefix="template" TagName="navControl" Src="~/architecture/Nav.ascx" %>
 
 <!DOCTYPE html>
@@ -13,9 +13,14 @@
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
     <div class="form">
         <form id="form2" runat="server">
-        <label for="firstName" id="Label1" runat="server">First Name:</label>
-        <input type="text" id="Text1" name="firstName" runat="server" />
-
+            <div>
+                <label for="userName" id="userNameid" runat="server">Username:</label>
+                <input type="text" id="userNameinput" name="userName" runat="server" />
+            </div>
+            <div>
+                <label for="password" id="passwordid" runat="server">Password:</label>
+                <input type="text" id="passwordInput" name="password" runat="server" />
+            </div>
         <input type="submit" id="submit" name="submit" value="Press it!" />
     </form>
     </div>
