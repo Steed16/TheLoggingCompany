@@ -22,6 +22,15 @@ namespace TheLoggingCompanyProject {
         protected global::TheLoggingCompanyProject.architecture.Nav navHtml;
         
         /// <summary>
+        /// footerHtml control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::TheLoggingCompanyProject.architecture.Footer footerHtml;
+        
+        /// <summary>
         /// form2 control.
         /// </summary>
         /// <remarks>

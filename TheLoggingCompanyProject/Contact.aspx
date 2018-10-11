@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="TheLoggingCompanyProject.Contact" %>
 <%@ Register TagPrefix="template" TagName="navControl" Src="~/architecture/Nav.ascx" %>
+<%@ Register TagPrefix="template" TagName="footerControl" Src="~/architecture/Footer.ascx" %>
 
 <!DOCTYPE html>
 
@@ -11,6 +12,7 @@
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
+    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
     <div class="form">
         <form id="form2" runat="server">
         <label for="firstName" id="Label1" runat="server">First Name:</label>
@@ -19,8 +21,5 @@
         <input type="submit" id="submit" name="submit" value="Press it!" />
     </form>
     </div>
-    <div class="footer">
-        <h2>Console: </h2>
-    </div>    
 </body>
 </html>

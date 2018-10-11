@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Account.aspx" />
+    <Content Include="architecture\Footer.ascx" />
     <Content Include="architecture\Nav.ascx" />
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
@@ -93,6 +94,13 @@
     </Compile>
     <Compile Include="Account.aspx.designer.cs">
       <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="architecture\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="architecture\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
     <Compile Include="architecture\Nav.ascx.cs">
       <DependentUpon>Nav.ascx</DependentUpon>

@@ -6,7 +6,7 @@
 <div class="container">
         <div class="Nav">
             <div class="heading">
-                <h1>The Logging Company</h1>
+                <h1><a href="Default.aspx">The Logging Company</a></h1>
             </div> 
                 <div id="navigation">
                     <ul>                 
@@ -15,7 +15,7 @@
                         <li> <a href="Store.aspx">Shop</a></li>  
                         <li> <a href="Contact.aspx">Contact</a></li>  
                         <li> <a href="About.aspx">About</a></li>
-                        <li> <a href="Account.aspx">Sign in/up</a></li>  
+                        <li> <a href="SignIn.aspx">Sign in/up</a></li>  
                     </ul>               
                 </div>
         </div>
