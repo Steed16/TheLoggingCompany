@@ -25,6 +25,7 @@
         }
         .column.right{
             width: 55%;
+            height: 500px;
             background-color: lightgray;
             border: 2px solid black;
             float: right;
@@ -46,8 +47,8 @@
             display: table;
             clear: both;
         }
-        h3{
-            text-align: left;
+        h2{
+            color: black;
         }
 
     </style>
@@ -58,11 +59,90 @@
     <div class="content">
         <div class="game">
             <div class="column left">
-                <span id="logsCount" class="toolTipText"></span>
-                <h2>Logs: 
-                    <span id="logs">0</span>
-                </h2>
+                <button id="cutWood">
+                    Chop that Wood!
+                </button>
+                <!-- Resources -->
+                <div class="resources">
+                    <p style="font-weight: bold; border-bottom: 2px solid black;" >Resources</p>
+                    <span id="logCount" class="toolTipText"></span>
+                    <p>Logs&trade;: 
+                        <span id="logs">0</span>
+                    </p>
+                    <span id="foodCount" class="toolTipText"></span>
+                    <p>Beaver Food: 
+                        <span id="food">0</span>
+                    </p>
+                    <span id="smartsCount" class="toolTipText"></span>
+                    <p>Beaver Smartz&trade;: 
+                        <span id="smart">0</span>
+                    </p>
+                    <span id="moneyCount" class="toolTipText"></span>
+                    <p>Money: 
+                        <span id="money">0</span>
+                    </p>
+                </div>
+                <!-- Management Stats -->
+                <div class="manage">
+                    <p style="font-weight: bold; border-bottom: 2px solid black;" >Management</p>
+                    <p>Sell logs:
+                        <span id="logPrice">0</span>
+                    </p>
+                    <button id="sellWood">
+                    Sell those Logs!
+                    </button>
+                    <p>Logs per second:
+                        <span id="logsS">0</span><br />
+                        Food consumed per second:
+                        <span id="foodEat">0</span><br />
+                        Food Produced per second:
+                        <span id="foodP">0</span><br /> 
+                    </p>
+                </div>
+                <!-- Production -->
+                <div class="production">
+                    <p style="font-weight: bold; border-bottom: 2px solid black;" >Production</p>
+                    <span id="humanCount" class="toolTipText"></span>
+                    <p>Humans: 
+                        <span id="human">0</span><br />
+                        Cost:
+                        <span id="humanCost">0</span>
+                    </p>                  
+                    <button id="buyHuman">
+                    Hire more humans
+                    </button>
 
+                    <span id="beaverCount" class="toolTipText"></span>
+                    <p>Beavers: 
+                        <span id="beaver">0</span><br />
+                        Cost:
+                        <span id="beaverCost">0</span>
+                    </p>
+                    <button id="buyBeaver">
+                    Buy that Beaver
+                    </button>
+
+                    <span id="sBeaverCount" class="toolTipText"></span>
+                    <p>Selectively Bred Beavers: 
+                        <span id="sBeaver">0</span><br />
+                        Cost:
+                        <span id="sBeaverCost">0</span>
+                    </p>
+                    <button id="buySBeaver">
+                    Buy Selectively Bred Beavers
+                    </button>
+
+                    <span id="gBeaverCount" class="toolTipText"></span>
+                    <p>Genetically Modified Beavers: 
+                        <span id="gBeaver">0</span><br />
+                        Cost:
+                        <span id="gBeaverCost">0</span>
+                    </p>
+                    <button id="buyGBeaver">
+                    Buy Genetically Modified Beaver
+                    </button>
+                </div>
+                
             </div>
             <div class="column right">
                 <h2>Possible Research</h2>

@@ -5,10 +5,9 @@
 
 .container {
     width: 100%;
-    position: absolute;
+    position: relative;
     background-color: white;
     top: 0;
-    height: 18%;
     margin: 0;
     padding: 0;
 }
@@ -74,7 +73,7 @@ a {
     position: fixed;
     width: 60%;
     height: 62%;
-    top: 18%;
+    top: 12%;
 }
 
 h3 {
