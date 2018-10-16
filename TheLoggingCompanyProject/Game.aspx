@@ -18,13 +18,13 @@
             padding: 10px;
         }
         .column.left{
-            width: 48%;
+            width: 40%;
             background-color: lightgrey;
             border: 2px solid black;
-            padding-right: 2px;
+
         }
         .column.right{
-            width: 48%;
+            width: 55%;
             background-color: lightgray;
             border: 2px solid black;
             float: right;
@@ -34,21 +34,54 @@
             display: table;
             clear: both;
         }
+        .column.rl{
+            width: 70%;
+        }
+        .column.rr{
+            width: 25%;
+            float: right;
+        }
+        .column.right:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        h3{
+            text-align: left;
+        }
+
     </style>
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
     <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
     <div class="content">
-        <h3>This is our Game!</h3>
         <div class="game">
             <div class="column left">
                 <span id="logsCount" class="toolTipText"></span>
-                <h2>"Logs "
-                    <span id="logs"></span>
+                <h2>Logs: 
+                    <span id="logs">0</span>
                 </h2>
+
             </div>
             <div class="column right">
+                <h2>Possible Research</h2>
+                <div class="column rl">
+                    <p>Name of Technology</p>
+                    <span id="r1Name" style="vertical-align: 20%">All the Caffeine (improve Human Workers by X amount)</span><br /><br />
+                    <span id="r2Name" style="vertical-align: 20%">Genetically Modified Beavers..? (unlocks Genetically Modified Beavers)</span><br /><br />
+                    <span id="r3Name" style="vertical-align: 20%">Pick the best ones, trust me (Unlocks selectively bred Beavers)</span><br /><br />
+                    <span id="r4Name" style="vertical-align: 20%">These Beavers are Metal (unlocks Cyborg Beavers)</span><br /><br />
+                    <span id="r5Name" style="vertical-align: 20%">I know a guy (improve $X per 1 Log)</span><br /><br />
+                </div>
+                <div class="column rr">
+                    <p>Cost</p>
+                    <span id="r1Cost" style="vertical-align: 20%">42</span><br />
+                    <span id="r2Cost" style="vertical-align: 20%">42</span><br />
+                    <span id="r3Cost" style="vertical-align: 20%">42</span><br />
+                    <span id="r4Cost" style="vertical-align: 20%">42</span><br />
+                    <span id="r5Cost" style="vertical-align: 20%">42</span><br />
+                </div>
 
             </div> 
         </div>
