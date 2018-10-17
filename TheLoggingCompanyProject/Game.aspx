@@ -55,7 +55,6 @@
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
-    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
     <div class="content">
         <div class="game">
             <div class="column left">
@@ -165,7 +164,8 @@
 
             </div> 
         </div>
-    </div>    
+    </div> 
+    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
 </body>
 </html>
 

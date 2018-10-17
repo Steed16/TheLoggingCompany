@@ -9,10 +9,14 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="wwwroot/css/styles.css">
     <title>The Logging Company</title>
+    <style>
+        h5 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
-    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
     <div class="form">
         <form id="form2" runat="server">
             <div>
@@ -23,8 +27,13 @@
                 <label for="password" id="passwordid" runat="server">Password:</label>
                 <input type="text" id="passwordInput" name="password" runat="server" />
             </div>
-        <input type="submit" id="submit" name="submit" value="Press it!" />
+            <br />
+            <input type="submit" id="submit" name="submit" value="Press it!" />
+            <input type="submit" id="forgot" name="forgotpass" value="Forgot Passward"/>
+            <h5></h5>
+            <input type="submit" id="new" name="new" value="Register Now"/>
     </form>
-    </div>   
+    </div> 
+    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
 </body>
 </html>

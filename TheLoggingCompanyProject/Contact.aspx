@@ -12,7 +12,7 @@
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
-    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
+    
     <div class="form">
         <form id="form2" runat="server">
         <label for="firstName" id="Label1" runat="server">First Name:</label>
@@ -21,5 +21,6 @@
         <input type="submit" id="submit" name="submit" value="Press it!" />
     </form>
     </div>
+    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
 </body>
 </html>

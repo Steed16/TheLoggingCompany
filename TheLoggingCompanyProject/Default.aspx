@@ -24,10 +24,11 @@
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
-    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
     <div class="content">
         <h3>Stuff here</h3>
-    </div>   
+    </div>    
+    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
+   
 </body>
 
 </html>

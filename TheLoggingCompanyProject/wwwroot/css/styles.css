@@ -73,7 +73,7 @@ a {
     position: fixed;
     width: 60%;
     height: 62%;
-    top: 12%;
+    overflow: auto;
 }
 
 h3 {

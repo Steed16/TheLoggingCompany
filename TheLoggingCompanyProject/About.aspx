@@ -12,9 +12,10 @@
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
-    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
+    
     <div class="content">
         <h3>This is who we are......Chad is such a Chad!</h3>
     </div> 
+    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
 </body>
 </html>

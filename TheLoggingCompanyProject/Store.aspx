@@ -9,13 +9,64 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="wwwroot/css/styles.css"/>
     <title>The Logging Company</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .column{
+            float: left;
+            padding: 10px;
+        }
+        .column.left{
+            width: 50%;
+            background-color: lightgrey;
+            border: 2px solid black;
+
+        }
+        .column.right{
+            width: 50%;
+            background-color: lightgray;
+            border: 2px solid black;
+            float: right;
+        }
+        .store:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .column.rl{
+            width: 70%;
+        }
+        .column.rr{
+            width: 25%;
+            float: right;
+        }
+        .column.right:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        h2{
+            color: black;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
-    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
     <div class="content">
-        <h3>This is our Store!</h3>
+        <div class="store">
+            <div class="column left">
+                <h2>Shirt 1</h2>
+                <h2><button id="shirt1">Add To Cart</button></h2>
+            </div>
+            <div class="column right">
+                <h2>lamplcoins x100</h2>
+                <h2><button>Add to Cart</button></h2>
+            </div>
+        </div>
     </div>
-     
+    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" /> 
 </body>
 </html>
