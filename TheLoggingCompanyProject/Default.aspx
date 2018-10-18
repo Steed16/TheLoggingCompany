@@ -23,7 +23,7 @@
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
       
-    <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
+    <%-- <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" /> --%>
    
 </body>
 

@@ -30,7 +30,7 @@
             <br />
             <input type="submit" id="submit" name="submit" value="Press it!" />
             <input type="submit" id="forgot" name="forgotpass" value="Forgot Passward"/>
-            <h5></h5>
+            <h5   ></h5>
             <input type="submit" id="new" name="new" value="Register Now"/>
     </form>
     </div> 
