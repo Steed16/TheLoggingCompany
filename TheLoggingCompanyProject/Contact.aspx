@@ -4,6 +4,29 @@
 
 <!DOCTYPE html>
 
+<script>
+	function Initialize() {
+		DetectJs();
+	}
+
+	function ValidateForm() {
+		if (document.forms["form2"]["firstName"].value == "") {
+			document.getElementById("firstName").style.color = "red";
+			document.getElementById("firstNamelabel").style.color = "red";
+            alert("first name");
+            return false;
+		} else {
+            document.forms["form2"].action = "Contact.aspx";
+            return true;
+		}
+	}
+	
+	function DetectJs() {
+	document.getElementById("noJs").style.display = "none";
+	}
+	
+</script>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="utf-8" />
@@ -32,7 +55,7 @@
     <div class="form">
         <form id="form2" runat="server">    
 
-        <label for="firstName" id="Label1" runat="server">First Name:</label>
+        <label for="firstName" id="firstNamelabel" runat="server">First Name:</label>
         <asp:TextBox id="firstName" runat="server"></asp:TextBox><br />
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" 
             runat="server" 

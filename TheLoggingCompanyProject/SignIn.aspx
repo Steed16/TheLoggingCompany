@@ -13,6 +13,9 @@
         h5 {
             text-align: center;
         }
+        .form {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
