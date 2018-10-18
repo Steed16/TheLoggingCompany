@@ -14,7 +14,27 @@
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
     
     <div class="content">
-        <h3>This is who we are......Chad is such a Chad!</h3>
+        <div id ="about">
+            <h3 style="font: bold">About the people</h3>
+
+            <div class="bio">
+                <h3>Cody Weiland</h3>
+            </div>
+            <div class="bio">
+                <h3>Dustin Steedsman</h3>
+            </div>
+            <div class="bio">
+                <h3>Chad</h3>
+            </div>
+            <div class="bio">
+                <h3>Zeke</h3>
+            </div><br />
+
+
+            <div class="site">
+                <h3>Everything about the site!</h3>
+            </div>
+        </div>
     </div> 
     <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
 </body>
