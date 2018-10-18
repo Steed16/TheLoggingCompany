@@ -78,7 +78,7 @@
     <Content Include="Store.aspx" />
     <Content Include="wwwroot\css\styles.css" />
     <Content Include="Web.config" />
-    <Content Include="wwwroot\images\beaver.gif" />
+    <Content Include="wwwroot\css\images\beaver.gif" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">

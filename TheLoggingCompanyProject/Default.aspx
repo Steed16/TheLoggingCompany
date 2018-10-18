@@ -8,10 +8,8 @@
 
 <style>
     body {
-        
-        background-image: url("/images/beaver.gif");
+        background-image: url(/wwwroot/css/images/beaver.gif);
         background-size: cover;
-
     }
 
 </style>
@@ -24,9 +22,7 @@
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
-    <div class="content">
-        <h3>Stuff here</h3>
-    </div>    
+      
     <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
    
 </body>
