@@ -9,23 +9,64 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="wwwroot/css/styles.css"/>
     <title>The Logging Company</title>
+
+    <script runat="server">
+
+        void Button_Click(Object sender, EventArgs e) 
+        {
+            if (Page.IsValid)
+            {
+            MessageLabel.Text = "Page submitted successfully.";
+            }
+        else
+            {
+            MessageLabel.Text = "There is an error on the page.";
+            }
+         }
+
+    </script>
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
     
     <div class="form">
-        <form id="form2" runat="server">
+        <form id="form2" runat="server">    
+
         <label for="firstName" id="Label1" runat="server">First Name:</label>
-        <input type="text" id="Text1" name="firstName" runat="server" /><br/>
+        <asp:TextBox id="firstName" runat="server"></asp:TextBox><br />
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" 
+            runat="server" 
+            display="Dynamic"
+            ErrorMessage="Please enter your first name" 
+            ControlToValidate="firstName">
+        </asp:RequiredFieldValidator>
 
         <label for="lastName" id="Label2" runat="server">Last Name:</label>
-        <input type="text" id="Text2" name="lastName" runat="server" /><br/>
+        <asp:TextBox id="lastName" runat="server"></asp:TextBox><br />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" 
+            runat="server" 
+            display="Dynamic"
+            ErrorMessage="Please enter your last name"  
+            ControlToValidate="lastName">
+        </asp:RequiredFieldValidator>
 
         <label for="email" id="Label3" runat="server">Email:</label>
-        <input type="text" id="Text3" name="email" runat="server" /><br/>
+        <asp:TextBox id="email" runat="server"></asp:TextBox><br />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" 
+            runat="server" 
+            display="Dynamic"
+            ErrorMessage="Please enter your email"  
+            ControlToValidate="email">
+        </asp:RequiredFieldValidator>
 
         <label for="ssn" id="Label4" runat="server">Social Security Number:</label>
-        <input type="text" id="Text4" name="ssn" runat="server" /><br/><br/>
+        <asp:TextBox id="ssn" runat="server"></asp:TextBox><br />>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" 
+            runat="server" 
+            display="Dynamic"
+            ErrorMessage="Please enter your Social Security number"  
+            ControlToValidate="ssn">
+        </asp:RequiredFieldValidator>
 
         <label for="misc" id="Label6" runat="server">Misc. Check all that apply:</label><br/>
         <input type="checkbox" name="check1" value="check"/> I loved this game!<br/>
@@ -37,7 +78,17 @@
         <label for="feedback" id="Label5" runat="server">Feedback:</label><br/>
         <textarea name="message" rows="10" cols="30">Why is our game so great?!  Tell us here!</textarea><br/><br/><br/>
 
-        <input type="submit" id="submit" name="submit" value="Press it!" />
+        <asp:button id="SubmitButton"
+        text="Submit"
+        onclick="Button_Click"
+        runat="server"/><br/><br/>
+
+        <asp:label id="MessageLabel" 
+        runat="server"/><br/><br/>
+
+        <asp:validationsummary
+        id="ErrorSummary"
+        runat="server"/>
     </form>
     </div>
     <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
