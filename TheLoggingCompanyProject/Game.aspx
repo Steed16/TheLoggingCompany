@@ -52,13 +52,23 @@
         }
 
     </style>
+    <script>
+        document.getElementById("cutWood").addEventListener("click", chopLog);
+
+        function chopLog() {
+            document.getElementById("logs").innerHTML = document.getElementById("logs").innerHTML + 1;
+        }
+
+
+
+    </script>
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
     <div class="content">
         <div class="game">
             <div class="column left">
-                <button id="cutWood">
+                <button id="cutWood" onclick="chopLog()">
                     Chop that Wood!
                 </button>
                 <!-- Resources -->
