@@ -53,16 +53,53 @@
 
     </style>
     <script>
-        var numLogs = 0;
+        //
+        //https://codepen.io/samuelbeard/pen/Dsdie?editors=1010
+        //Good source of help :D
+        //
 
-        function chopLog() {
-            console.log(numLogs);
-            numLogs = parseInt(document.getElementById("logs"));
-            console.log(numLogs);
+        var numLogs = 0; //Total number of logs
+        var auto_human = 0; //auto human
+        var auto_beaver = 0; //auto beaver
+        var click_rate = 1000; //ms between each autoclick
+
+        function update_total_logs() { //updates the number of clicks   
+            var e = document.getElementById("logs");
+                e.innerHTML = numLogs;
+        }
+
+        function buy_something(c, button) {
+             if (numLogs > c) {
+               numLogs -= c;
+             }
+
+        }
+
+        document.getElementById("click").onclick = function() {
+            numLogs = parseInt(numLogs) + 1;
+            update_total_logs(); //updates the text
+        };
+
+        document.getElementById("buy_click").onclick = function() {
+            if (!buy_something(cost, this)) return;
+            auto_logs = auto_human
+            cost = Math.pow(2, auto_clicks); //new cost
+            update_total_clicks();
+            var e = document.getElementById("logsS");
+            e.innerHTML = auto_logs;
+            var e2 = document.getElementById("buyhuman");
+            e2.innerHTML = 'Buy for ' + cost;
+            var e2 = document.getElementById("autoclicker_level");
+            e2.innerHTML = 'lvl  ' + auto_clicks;
+        };
+
+        /*
+       function chopLog() {
+            numLogs = parseInt(document.getElementById("logs").innerHTML);
             numLogs++;
             document.getElementById("logs").innerHTML = numLogs;
         }
-
+        */
 
 
     </script>
