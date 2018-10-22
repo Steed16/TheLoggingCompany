@@ -53,10 +53,14 @@
 
     </style>
     <script>
-        document.getElementById("cutWood").addEventListener("click", chopLog);
+        var numLogs = 0;
 
         function chopLog() {
-            document.getElementById("logs").innerHTML = document.getElementById("logs").innerHTML + 1;
+            console.log(numLogs);
+            numLogs = parseInt(document.getElementById("logs"));
+            console.log(numLogs);
+            numLogs++;
+            document.getElementById("logs").innerHTML = numLogs;
         }
 
 
