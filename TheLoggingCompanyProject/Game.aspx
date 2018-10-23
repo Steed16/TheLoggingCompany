@@ -54,52 +54,47 @@
     </style>
     <script>
         //
-        //https://codepen.io/samuelbeard/pen/Dsdie?editors=1010
+        //http://dhmholley.co.uk/incrementals.html
         //Good source of help :D
+        //
+        //
+        //Code Storage //
+        //
+        //numLogs = parseInt(document.getElementById("logs").innerHTML);
+        //numLogs++;
+        //document.getElementById("logs").innerHTML = numLogs;
         //
 
         var numLogs = 0; //Total number of logs
-        var auto_human = 0; //auto human
-        var auto_beaver = 0; //auto beaver
-        var click_rate = 1000; //ms between each autoclick
+        var autoHuman = 0; //Number of Humans
 
-        function update_total_logs() { //updates the number of clicks   
-            var e = document.getElementById("logs");
-                e.innerHTML = numLogs;
-        }
-
-        function buy_something(c, button) {
-             if (numLogs > c) {
-               numLogs -= c;
-             }
-
-        }
-
-        document.getElementById("click").onclick = function() {
-            numLogs = parseInt(numLogs) + 1;
-            update_total_logs(); //updates the text
+        
+       function chopLog(number) {
+           numLogs = numLogs + number
+           document.getElementById("logs").innerHTML = numLogs;
         };
 
-        document.getElementById("buy_click").onclick = function() {
-            if (!buy_something(cost, this)) return;
-            auto_logs = auto_human
-            cost = Math.pow(2, auto_clicks); //new cost
-            update_total_clicks();
-            var e = document.getElementById("logsS");
-            e.innerHTML = auto_logs;
-            var e2 = document.getElementById("buyhuman");
-            e2.innerHTML = 'Buy for ' + cost;
-            var e2 = document.getElementById("autoclicker_level");
-            e2.innerHTML = 'lvl  ' + auto_clicks;
+        function buyHuman() {
+            var humanCost = Math.floor(10 * Math.pow(1.1, autoHuman)); //math.power(base, Exponent)
+            if(numLogs >= humanCost) {
+                autoHuman++;
+                numLogs = numLogs - humanCost;
+                document.getElementById('human').innerHTML = autoHuman;  //updates the number of autohumans for the user
+                document.getElementById('logs').innerHTML = numLogs;    //updates total number of logs
+            };
+            var nextCost = Math.floor(10 * Math.pow(1.1,autoHuman));       //works out the cost of the next human
+            document.getElementById('humanCost').innerHTML = nextCost;
         };
 
-        /*
-       function chopLog() {
-            numLogs = parseInt(document.getElementById("logs").innerHTML);
-            numLogs++;
-            document.getElementById("logs").innerHTML = numLogs;
-        }
-        */
+
+
+        window.setInterval(function () {
+	
+	        chopLog(autoHuman);
+	
+        }, 1000);
+
+
 
 
     </script>
@@ -109,7 +104,7 @@
     <div class="content">
         <div class="game">
             <div class="column left">
-                <button id="cutWood" onclick="chopLog()">
+                <button id="cutWood" onclick="chopLog(1)">
                     Chop that Wood!
                 </button>
                 <!-- Resources -->
@@ -156,9 +151,9 @@
                     <p>Humans: 
                         <span id="human">0</span><br />
                         Cost:
-                        <span id="humanCost">0</span>
+                        <span id="humanCost">2</span>
                     </p>                  
-                    <button id="buyHuman">
+                    <button id="buyHuman" onclick="buyHuman()">
                     Hire more humans
                     </button>
 
