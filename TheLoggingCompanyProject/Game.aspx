@@ -25,30 +25,77 @@
 
         var numLogs = 0; //Total number of logs
         var autoHuman = 0; //Number of Humans
+        var autoBeaver = 0; //Number of normal Beavers
+        var autoSBeaver = 0; //Number of selectively bred Beavers
+
 
         
-       function chopLog(number) {
-           numLogs = numLogs + number
+       function chopLog(num1, num2, num3) {
+           numLogs = numLogs + num1 + num2 + num3;
            document.getElementById("logs").innerHTML = numLogs;
+           document.getElementById('logsS').innerHTML = autoHuman + 2*autoBeaver + 4*autoSBeaver; 
         };
 
         function buyHuman() {
-            var humanCost = Math.floor(10 * Math.pow(1.1, autoHuman)); //math.power(base, Exponent)
+            var humanCost = Math.floor(10 * Math.pow(1.1, autoHuman));      //math.power(base, Exponent)
             if(numLogs >= humanCost) {
                 autoHuman++;
                 numLogs = numLogs - humanCost;
-                document.getElementById('human').innerHTML = autoHuman;  //updates the number of autohumans for the user
-                document.getElementById('logs').innerHTML = numLogs;    //updates total number of logs
+                document.getElementById('human').innerHTML = autoHuman;     //updates the number of autohumans for the user
+                document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
             };
-            var nextCost = Math.floor(10 * Math.pow(1.1,autoHuman));       //works out the cost of the next human
+            var nextCost = Math.floor(10 * Math.pow(1.1,autoHuman));        //works out the cost of the next human
             document.getElementById('humanCost').innerHTML = nextCost;
+
+        };
+
+        function buyBeaver() {
+            if (autoBeaver == 0) {                                          //made to do intial cost
+                var beaverCost = 1;
+                if(numLogs >= beaverCost) {
+                autoBeaver++;
+                numLogs = numLogs - beaverCost;
+                document.getElementById('beaver').innerHTML = autoBeaver;  
+  
+            };
+            }
+            var beaverSCost = Math.floor(10 * Math.pow(1.1, autoBeaver)) + 100; //math.power(base, Exponent)
+            if(numLogs >= beaverCost) {
+                autoBeaver++;
+                numLogs = numLogs - beaverCost;
+                document.getElementById('beaver').innerHTML = autoBeaver;   //updates the number of autoBeavers for the user
+                document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
+            };
+            var nextCost = Math.floor(10 * Math.pow(1.1,autoBeaver)) + 100;       //works out the cost of the next human
+            document.getElementById('beaverCost').innerHTML = nextCost;
+        };
+        function buySBeaver() {
+            if (autoSBeaver == 0) {                                          //made to do intial cost
+                var beaverSCost = 1;
+                if(numLogs >= beaverSCost) {
+                autoSBeaver++;
+                numLogs = numLogs - beaverSCost;
+                document.getElementById('sBeaver').innerHTML = autoSBeaver;  
+  
+            };
+            }
+            var beaverSCost = Math.floor(10 * Math.pow(1.1, autoSBeaver)) + 100; //math.power(base, Exponent)
+            if(numLogs >= beaverSCost) {
+                autoSBeaver++;
+                numLogs = numLogs - beaverCost;
+                document.getElementById('sBeaver').innerHTML = autoSBeaver;   //updates the number of autoBeavers for the user
+                document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
+            };
+            var nextCost = Math.floor(10 * Math.pow(1.1,autoSBeaver)) + 100;       //works out the cost of the next human
+            document.getElementById('sBeaverCost').innerHTML = nextCost;
         };
 
 
 
         window.setInterval(function () {
 	
-	        chopLog(autoHuman);
+            chopLog(autoHuman, 2 * autoBeaver, 4 * autoSBeaver);
+ 
 	
         }, 1000);
 
@@ -62,7 +109,7 @@
     <div class="content">
         <div class="game">
             <div class="column left">
-                <button id="cutWood" onclick="chopLog(1)">
+                <button id="cutWood" onclick="chopLog(1,0,0)">
                     Chop that Wood!
                 </button>
                 <!-- Resources -->
@@ -109,7 +156,7 @@
                     <p>Humans: 
                         <span id="human">0</span><br />
                         Cost:
-                        <span id="humanCost">2</span>
+                        <span id="humanCost">10</span>
                     </p>                  
                     <button id="buyHuman" onclick="buyHuman()">
                     Hire more humans
@@ -119,9 +166,9 @@
                     <p>Beavers: 
                         <span id="beaver">0</span><br />
                         Cost:
-                        <span id="beaverCost">0</span>
+                        <span id="beaverCost">100</span>
                     </p>
-                    <button id="buyBeaver">
+                    <button id="buyBeaver" onclick="buyBeaver()">
                     Buy that Beaver
                     </button>
 
@@ -129,9 +176,9 @@
                     <p>Selectively Bred Beavers: 
                         <span id="sBeaver">0</span><br />
                         Cost:
-                        <span id="sBeaverCost">0</span>
+                        <span id="sBeaverCost">1000</span>
                     </p>
-                    <button id="buySBeaver">
+                    <button id="buySBeaver" onclick="buySBeaver()">
                     Buy Selectively Bred Beavers
                     </button>
 
