@@ -11,11 +11,47 @@
     <title>The Logging Company</title>
     
     <script>
-        document.getElementById("cutWood").addEventListener("click", chopLog);
+        //
+        //http://dhmholley.co.uk/incrementals.html
+        //Good source of help :D
+        //
+        //
+        //Code Storage //
+        //
+        //numLogs = parseInt(document.getElementById("logs").innerHTML);
+        //numLogs++;
+        //document.getElementById("logs").innerHTML = numLogs;
+        //
 
-        function chopLog() {
-            document.getElementById("logs").innerHTML = document.getElementById("logs").innerHTML + 1;
-        }
+        var numLogs = 0; //Total number of logs
+        var autoHuman = 0; //Number of Humans
+
+        
+       function chopLog(number) {
+           numLogs = numLogs + number
+           document.getElementById("logs").innerHTML = numLogs;
+        };
+
+        function buyHuman() {
+            var humanCost = Math.floor(10 * Math.pow(1.1, autoHuman)); //math.power(base, Exponent)
+            if(numLogs >= humanCost) {
+                autoHuman++;
+                numLogs = numLogs - humanCost;
+                document.getElementById('human').innerHTML = autoHuman;  //updates the number of autohumans for the user
+                document.getElementById('logs').innerHTML = numLogs;    //updates total number of logs
+            };
+            var nextCost = Math.floor(10 * Math.pow(1.1,autoHuman));       //works out the cost of the next human
+            document.getElementById('humanCost').innerHTML = nextCost;
+        };
+
+
+
+        window.setInterval(function () {
+	
+	        chopLog(autoHuman);
+	
+        }, 1000);
+
 
 
 
@@ -26,7 +62,7 @@
     <div class="content">
         <div class="game">
             <div class="column left">
-                <button id="cutWood" onclick="chopLog()">
+                <button id="cutWood" onclick="chopLog(1)">
                     Chop that Wood!
                 </button>
                 <!-- Resources -->
@@ -73,9 +109,9 @@
                     <p>Humans: 
                         <span id="human">0</span><br />
                         Cost:
-                        <span id="humanCost">0</span>
+                        <span id="humanCost">2</span>
                     </p>                  
-                    <button id="buyHuman">
+                    <button id="buyHuman" onclick="buyHuman()">
                     Hire more humans
                     </button>
 
