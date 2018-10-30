@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Nav.ascx.cs" Inherits="TheLoggingCompanyProject.architecture.Nav" %>
 
 
-
+<link rel="stylesheet" href="wwwroot/css/styles.css"/>
 
 <div class="container">
         <div class="Nav">

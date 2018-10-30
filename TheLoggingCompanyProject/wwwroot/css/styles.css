@@ -94,11 +94,11 @@ h3 {
 
 .form {
     background-color: lightgrey;
-    width: 500px;
+    position: fixed;
+    width: 60%;
     height: 450px;
-    top: 18%;
     text-align: left;
-    margin: 0 auto;
+    left: 20%;
     overflow: auto;
 }
 
@@ -113,7 +113,6 @@ h3 {
     border: 2px solid black;
     display: block;
     float: left;
-
 }
 
 h6 {

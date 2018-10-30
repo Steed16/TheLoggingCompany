@@ -19,20 +19,21 @@
 
             <div class="bio">
                 <h3>Cody Weiland</h3>
+                <br />  
+                <h3>Who you are!</h3>
             </div>
             <div class="bio">
                 <h3>Dustin Steedsman</h3>
+                <br />
+                <h3>I am a junior at Concordia College.
+                    I like video games.
+                </h3>
             </div>
             <div class="bio">
                 <h3>Chad</h3>
             </div>
             <div class="bio">
                 <h3>Zeke</h3>
-            </div><br />
-
-
-            <div class="site">
-                <h3>Everything about the site!</h3>
             </div>
         </div>
     </div> 

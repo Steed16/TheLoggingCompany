@@ -7,51 +7,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="wwwroot/css/styles.css"/>
+    <link rel="stylesheet" href="wwwroot/css/gameStyle.css"/>
     <title>The Logging Company</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        .column{
-            float: left;
-            padding: 10px;
-        }
-        .column.left{
-            width: 40%;
-            background-color: lightgrey;
-            border: 2px solid black;
-
-        }
-        .column.right{
-            width: 55%;
-            height: 500px;
-            background-color: lightgray;
-            border: 2px solid black;
-            float: right;
-        }
-        .game:after{
-            content: "";
-            display: table;
-            clear: both;
-        }
-        .column.rl{
-            width: 70%;
-        }
-        .column.rr{
-            width: 25%;
-            float: right;
-        }
-        .column.right:after{
-            content: "";
-            display: table;
-            clear: both;
-        }
-        h2{
-            color: black;
-        }
-
-    </style>
+    
     <script>
         document.getElementById("cutWood").addEventListener("click", chopLog);
 

@@ -76,8 +76,11 @@
     <Content Include="Game.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="Store.aspx" />
+    <Content Include="wwwroot\css\gameStyle.css" />
     <Content Include="wwwroot\css\styles.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="wwwroot\css\images\beaver.gif" />
   </ItemGroup>
   <ItemGroup>
