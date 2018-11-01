@@ -51,15 +51,11 @@
 
         function buyBeaver() {
             if (autoBeaver == 0) {                                          //made to do intial cost
-                var beaverCost = 1000;
-                if(numLogs >= beaverCost) {
-                autoBeaver++;
-                numLogs = numLogs - beaverCost;
-                document.getElementById('beaver').innerHTML = autoBeaver;  
-  
-            };
+                var beaverCost = 1000;  
+            } else {
+                var beaverCost = Math.floor(10 * Math.pow(1.1, autoBeaver)) + 1000; //math.power(base, Exponent)
             }
-            var beaverCost = Math.floor(10 * Math.pow(1.1, autoBeaver)) + 1000; //math.power(base, Exponent)
+
             if(numLogs >= beaverCost) {
                 autoBeaver++;
                 numLogs = numLogs - beaverCost;
@@ -69,17 +65,13 @@
             var nextCost = Math.floor(10 * Math.pow(1.1,autoBeaver)) + 1000;       //works out the cost of the next human
             document.getElementById('beaverCost').innerHTML = nextCost;
         };
+
         function buySBeaver() {
             if (autoSBeaver == 0) {                                          //made to do intial cost
-                var beaverSCost = 1;
-                if(numLogs >= beaverSCost) {
-                autoSBeaver++;
-                numLogs = numLogs - beaverSCost;
-                document.getElementById('sBeaver').innerHTML = autoSBeaver;  
-  
-            };
+                var beaverSCost = 10000;
+            } else {
+                var beaverSCost = Math.floor(10 * Math.pow(1.1, autoSBeaver)) + 10000; //math.power(base, Exponent)
             }
-            var beaverSCost = Math.floor(10 * Math.pow(1.1, autoSBeaver)) + 10000; //math.power(base, Exponent)
             if(numLogs >= beaverSCost) {
                 autoSBeaver++;
                 numLogs = numLogs - beaverSCost;
