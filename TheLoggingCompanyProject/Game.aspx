@@ -51,7 +51,7 @@
 
         function buyBeaver() {
             if (autoBeaver == 0) {                                          //made to do intial cost
-                var beaverCost = 1;
+                var beaverCost = 1000;
                 if(numLogs >= beaverCost) {
                 autoBeaver++;
                 numLogs = numLogs - beaverCost;
@@ -59,14 +59,14 @@
   
             };
             }
-            var beaverSCost = Math.floor(10 * Math.pow(1.1, autoBeaver)) + 100; //math.power(base, Exponent)
+            var beaverCost = Math.floor(10 * Math.pow(1.1, autoBeaver)) + 1000; //math.power(base, Exponent)
             if(numLogs >= beaverCost) {
                 autoBeaver++;
                 numLogs = numLogs - beaverCost;
                 document.getElementById('beaver').innerHTML = autoBeaver;   //updates the number of autoBeavers for the user
                 document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
             };
-            var nextCost = Math.floor(10 * Math.pow(1.1,autoBeaver)) + 100;       //works out the cost of the next human
+            var nextCost = Math.floor(10 * Math.pow(1.1,autoBeaver)) + 1000;       //works out the cost of the next human
             document.getElementById('beaverCost').innerHTML = nextCost;
         };
         function buySBeaver() {
@@ -79,14 +79,14 @@
   
             };
             }
-            var beaverSCost = Math.floor(10 * Math.pow(1.1, autoSBeaver)) + 100; //math.power(base, Exponent)
+            var beaverSCost = Math.floor(10 * Math.pow(1.1, autoSBeaver)) + 10000; //math.power(base, Exponent)
             if(numLogs >= beaverSCost) {
                 autoSBeaver++;
-                numLogs = numLogs - beaverCost;
-                document.getElementById('sBeaver').innerHTML = autoSBeaver;   //updates the number of autoBeavers for the user
+                numLogs = numLogs - beaverSCost;
+                document.getElementById('sBeaver').innerHTML = autoSBeaver;   //updates the number of autoSBeavers for the user
                 document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
             };
-            var nextCost = Math.floor(10 * Math.pow(1.1,autoSBeaver)) + 100;       //works out the cost of the next human
+            var nextCost = Math.floor(10 * Math.pow(1.1,autoSBeaver)) + 10000;       //works out the cost of the next human
             document.getElementById('sBeaverCost').innerHTML = nextCost;
         };
 
@@ -166,7 +166,7 @@
                     <p>Beavers: 
                         <span id="beaver">0</span><br />
                         Cost:
-                        <span id="beaverCost">100</span>
+                        <span id="beaverCost">1000</span>
                     </p>
                     <button id="buyBeaver" onclick="buyBeaver()">
                     Buy that Beaver
@@ -176,7 +176,7 @@
                     <p>Selectively Bred Beavers: 
                         <span id="sBeaver">0</span><br />
                         Cost:
-                        <span id="sBeaverCost">1000</span>
+                        <span id="sBeaverCost">10000</span>
                     </p>
                     <button id="buySBeaver" onclick="buySBeaver()">
                     Buy Selectively Bred Beavers
