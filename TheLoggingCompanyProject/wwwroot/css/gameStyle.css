@@ -13,16 +13,19 @@
 }
 
 .column.left {
-    width: 40%;
-    background-color: lightgrey;
-    border: 2px solid black;
+    width: 15%;
+}
+
+.column.middle {
+    width: 15%;
+}
+
+.column.middle2 {
+    width: 20%;
 }
 
 .column.right {
-    width: 55%;
-    height: 500px;
-    background-color: lightgray;
-    border: 2px solid black;
+    width: 25%;
     float: right;
 }
 
@@ -51,21 +54,22 @@ h2 {
     color: black;
 }
 
-.content {
-    left: 20%;
+.contentGame {
     background-color: white;
-    position: fixed;
-    width: 60%;
-    height: 62%;
+    position: relative;
+    width: 100%;
     overflow: auto;
+    height: -webkit-fill-available;
 }
 
 .form {
-    background-color: lightgrey;
-    position: fixed;
+    position: relative;
     width: 60%;
-    height: 450px;
     text-align: left;
     left: 20%;
     overflow: auto;
+}
+
+.techButton {
+    width: 150%;
 }

@@ -98,15 +98,15 @@
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
-    <div class="content">
+    <div class="contentGame">
         <div class="game">
             <div class="column left">
-                <button id="cutWood" onclick="chopLog(1,0,0)">
-                    Chop that Wood!
-                </button>
                 <!-- Resources -->
                 <div class="resources">
                     <p style="font-weight: bold; border-bottom: 2px solid black;" >Resources</p>
+                    <button id="cutWood" onclick="chopLog(1,0,0)">
+                        Chop that Wood!
+                    </button>
                     <span id="logCount" class="toolTipText"></span>
                     <p>Logs&trade;: 
                         <span id="logs">0</span>
@@ -141,7 +141,9 @@
                         <span id="foodP">0</span><br /> 
                     </p>
                 </div>
-                <!-- Production -->
+            </div>
+            <div class="column middle">
+            <!-- Production -->
                 <div class="production">
                     <p style="font-weight: bold; border-bottom: 2px solid black;" >Production</p>
                     <span id="humanCount" class="toolTipText"></span>
@@ -184,28 +186,20 @@
                     Buy Genetically Modified Beaver
                     </button>
                 </div>
-                
-            </div>
-            <div class="column right">
-                <h2>Possible Research</h2>
+                </div>
+            <div class="column middle2">
+                <p style="font-weight: bold; border-bottom: 2px solid black;" >Technologies</p>
                 <div class="column rl">
-                    <p>Name of Technology</p>
-                    <span id="r1Name" style="vertical-align: 20%">All the Caffeine (improve Human Workers by X amount)</span><br /><br />
-                    <span id="r2Name" style="vertical-align: 20%">Genetically Modified Beavers..? (unlocks Genetically Modified Beavers)</span><br /><br />
-                    <span id="r3Name" style="vertical-align: 20%">Pick the best ones, trust me (Unlocks selectively bred Beavers)</span><br /><br />
-                    <span id="r4Name" style="vertical-align: 20%">These Beavers are Metal (unlocks Cyborg Beavers)</span><br /><br />
-                    <span id="r5Name" style="vertical-align: 20%">I know a guy (improve $X per 1 Log)</span><br /><br />
+                    <button class="techButton" id="r1Name" style="vertical-align: 20%">All the Caffeine (improve Human Workers by X amount)<br /> 100 Wood </button><br /><br />
+                    <button class="techButton" id="r2Name" style="vertical-align: 20%">Genetically Modified Beavers..? (unlocks Genetically Modified Beavers)<br /> 200 Wood </button><br /><br />
+                    <button class="techButton" id="r3Name" style="vertical-align: 20%">Pick the best ones, trust me (Unlocks selectively bred Beavers)<br /> 300 Wood </button><br /><br />
+                    <button class="techButton" id="r4Name" style="vertical-align: 20%">These Beavers are Metal (unlocks Cyborg Beavers)<br /> 400 Wood </button><br /><br />
+                    <button class="techButton" id="r5Name" style="vertical-align: 20%">I know a guy (improve $X per 1 Log)<br /> 500 Wood </button><br /><br />
                 </div>
-                <div class="column rr">
-                    <p>Cost</p>
-                    <span id="r1Cost" style="vertical-align: 20%">42</span><br />
-                    <span id="r2Cost" style="vertical-align: 20%">42</span><br />
-                    <span id="r3Cost" style="vertical-align: 20%">42</span><br />
-                    <span id="r4Cost" style="vertical-align: 20%">42</span><br />
-                    <span id="r5Cost" style="vertical-align: 20%">42</span><br />
-                </div>
-
             </div> 
+            <div class="column right">
+
+            </div>
         </div>
     </div> 
     <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
