@@ -40,7 +40,7 @@
                 document.getElementById('human').innerHTML = autoHuman;  //updates the number of autohumans for the user
                 document.getElementById('logs').innerHTML = numLogs;    //updates total number of logs
             };
-            var nextCost = Math.floor(10 * Math.pow(1.1,autoHuman));       //works out the cost of the next human
+            var nextCost = Math.floor(5 * Math.pow(1.1,autoHuman));       //works out the cost of the next human
             document.getElementById('humanCost').innerHTML = nextCost;
         };
 
