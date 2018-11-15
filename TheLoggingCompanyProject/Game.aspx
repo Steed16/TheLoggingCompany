@@ -27,13 +27,18 @@
         var autoHuman = 0; //Number of Humans
         var autoBeaver = 0; //Number of normal Beavers
         var autoSBeaver = 0; //Number of selectively bred Beavers
+        var autoHumanOutput = 1
+        var autoBeaverOutput = 4
+        var autoSBeaverOutput = 8
+
+        
 
 
         
        function chopLog(num1, num2, num3) {
            numLogs = numLogs + num1 + num2 + num3;
            document.getElementById("logs").innerHTML = numLogs;
-           document.getElementById('logsS').innerHTML = autoHuman + 2*autoBeaver + 4*autoSBeaver; 
+           document.getElementById('logsS').innerHTML = (autoHuman * autoHumanOutput) + (autoBeaverOutput * autoBeaver) + (autoSBeaverOutput * autoSBeaver); 
         };
 
         function buyHuman() {
@@ -82,11 +87,15 @@
             document.getElementById('sBeaverCost').innerHTML = nextCost;
         };
 
+        function buyTechnology() {
+
+        }
+
 
 
         window.setInterval(function () {
 	
-            chopLog(autoHuman, 2 * autoBeaver, 4 * autoSBeaver);
+            chopLog((autoHuman * autoHumanOutput) + (autoBeaverOutput * autoBeaver) + (autoSBeaverOutput * autoSBeaver));
  
 	
         }, 1000);
@@ -190,11 +199,11 @@
             <div class="column middle2">
                 <p style="font-weight: bold; border-bottom: 2px solid black;" >Technologies</p>
                 <div class="column rl">
-                    <button class="techButton" id="r1Name" style="vertical-align: 20%">All the Caffeine (improve Human Workers by X amount)<br /> 100 Wood </button><br /><br />
-                    <button class="techButton" id="r2Name" style="vertical-align: 20%">Genetically Modified Beavers..? (unlocks Genetically Modified Beavers)<br /> 200 Wood </button><br /><br />
-                    <button class="techButton" id="r3Name" style="vertical-align: 20%">Pick the best ones, trust me (Unlocks selectively bred Beavers)<br /> 300 Wood </button><br /><br />
-                    <button class="techButton" id="r4Name" style="vertical-align: 20%">These Beavers are Metal (unlocks Cyborg Beavers)<br /> 400 Wood </button><br /><br />
-                    <button class="techButton" id="r5Name" style="vertical-align: 20%">I know a guy (improve $X per 1 Log)<br /> 500 Wood </button><br /><br />
+                    <button class="techButton" id="r1Name" onclick="buyTechnology(0)" style="vertical-align: 20%">All the Caffeine (improve Human Workers by X amount)<br /> 100 Wood </button><br /><br />
+                    <button class="techButton" id="r2Name" onclick="buyTechnology(1)" style="vertical-align: 20%">Genetically Modified Beavers..? (unlocks Genetically Modified Beavers)<br /> 200 Wood </button><br /><br />
+                    <button class="techButton" id="r3Name" onclick="buyTechnology(2)" style="vertical-align: 20%">Pick the best ones, trust me (Unlocks selectively bred Beavers)<br /> 300 Wood </button><br /><br />
+                    <button class="techButton" id="r4Name" onclick="buyTechnology(3)" style="vertical-align: 20%">These Beavers are Metal (unlocks Cyborg Beavers)<br /> 400 Wood </button><br /><br />
+                    <button class="techButton" id="r5Name" onclick="buyTechnology(4)" style="vertical-align: 20%">I know a guy (improve $X per 1 Log)<br /> 500 Wood </button><br /><br />
                 </div>
             </div> 
             <div class="column right">
