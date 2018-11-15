@@ -198,7 +198,16 @@
                 </div>
             </div> 
             <div class="column right">
-
+                <p style="font-weight: bold; border-bottom: 2px solid black;" >Pay To Win!</p>
+                 <button class="payButton" id="coins100" style="vertical-align: 20%">CRAFTCOINS: 100<br /> $50 </button>
+                 <button class="payButton" id="coins1000" style="vertical-align: 20%">CRAFTCOINS: 1000<br /> $500 </button> <br /><br />
+                 <button class="payButton" id="cash100" style="vertical-align: 20%">COBBERCASH: 100<br /> $50 </button>
+                 <button class="payButton" id="cash1000" style="vertical-align: 20%">COBBERCASH: 1000<br /> $500 </button> <br /><br />
+                 <button class="payButton" id="bucks100" style="vertical-align: 20%">KAMELBUCKS: 100<br /> $50 </button>
+                 <button class="payButton" id="bucks1000" style="vertical-align: 20%">KAMELBUCKS: 1000<br /> $500 </button> <br /><br />
+                 <button class="payButton" id="lamplpay100" style="vertical-align: 20%">LAMPLCOINS: 100<br /> $50 </button>
+                 <button class="payButton" id="lamplpay1000" style="vertical-align: 20%">LAMPLCOINS: 1000<br /> $500 </button> <br /><br />
+                 <button class="payButton" id="chadpay1" style="vertical-align: 20%">CHAD: 1<br /> $100,000 </button> <br /><br />
             </div>
         </div>
     </div> 
