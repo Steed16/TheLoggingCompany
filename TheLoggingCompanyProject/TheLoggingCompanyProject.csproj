@@ -144,6 +144,7 @@
     </Compile>
     <Compile Include="CRUD.aspx.cs">
       <DependentUpon>CRUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CRUD.aspx.designer.cs">
       <DependentUpon>CRUD.aspx</DependentUpon>

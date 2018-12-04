@@ -51,6 +51,20 @@ section {
   color: #333;
 }
     </style>
+
+<% @{var value = Convert.ToInt32(Request.QueryString["Id"]);}
+@if (value == "1") {
+    string test = "This works"
+}%>
+<%--@foreach (var product in Model.prodcuts)
+{
+     if (product.products == value) 
+     {
+          <tr>
+               <td>@(product.Name)</td>
+          </tr>
+      }
+}--%>
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
@@ -58,7 +72,7 @@ section {
  
   <header>
     <hgroup>
-      <h1><% string test = "test"; Response.Write(test);%> </h1>
+      <h1><% Response.Write(test);%> </h1>
       <h3>Your best purchase ever</h3>
     </hgroup>
   </header>
