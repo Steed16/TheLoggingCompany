@@ -11,7 +11,12 @@ namespace TheLoggingCompanyProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            int value = Convert.ToInt32(Request.QueryString["Id"]);
+            string title1 = value.ToString();
+            string price1 = "";
 
+            title.InnerHtml = title1;
+            price.InnerHtml = price1;
         }
     }
 }

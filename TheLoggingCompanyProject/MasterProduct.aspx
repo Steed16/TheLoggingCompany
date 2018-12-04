@@ -52,23 +52,7 @@ section {
 }
     </style>
 
-<% var value = Convert.ToInt32(Request.QueryString["Id"]);
-    string test;
-    if (value == 1)
-    {
-        test = "applesauce";
-    }
 
-%>
-<%--@foreach (var product in Model.prodcuts)
-{
-     if (product.products == value) 
-     {
-          <tr>
-               <td>@(product.Name)</td>
-          </tr>
-      }
-}--%>
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
@@ -76,13 +60,13 @@ section {
  
   <header>
     <hgroup>
-      <h1><% Response.Write(test); %>  </h1>
+      <h1 runat="server" id="title"> </h1>
       <h3>Your best purchase ever</h3>
     </hgroup>
   </header>
  
   <figure>
-    <img src="">
+    <img src= >
   </figure>
  
   <section>
@@ -97,7 +81,7 @@ section {
             <li>buy more!!!</li>
         </ul>
     </details>
-    
+   <p>Price: $<p runat="server" id="price"></p></p>
   <button>Buy Now</button>
  
   </section>
