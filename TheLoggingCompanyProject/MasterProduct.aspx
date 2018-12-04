@@ -66,7 +66,7 @@ section {
   </header>
  
   <figure>
-    <img src= >
+    <img runat="server" id="imageProduct">
   </figure>
  
   <section>

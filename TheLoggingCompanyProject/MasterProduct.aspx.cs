@@ -14,9 +14,11 @@ namespace TheLoggingCompanyProject
             int value = Convert.ToInt32(Request.QueryString["Id"]);
             string title1 = value.ToString();
             string price1 = "";
+            string imageSource = "/wwwroot/css/images/testPic.png";
 
             title.InnerHtml = title1;
             price.InnerHtml = price1;
+            imageProduct.Src = imageSource;
         }
     }
 }

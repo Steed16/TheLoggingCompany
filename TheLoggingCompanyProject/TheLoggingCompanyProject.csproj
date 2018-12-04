@@ -100,6 +100,7 @@
     <Content Include="SignIn.aspx" />
     <Content Include="Store.aspx" />
     <Content Include="wwwroot\css\gameStyle.css" />
+    <Content Include="wwwroot\css\images\testPic.png" />
     <Content Include="wwwroot\css\styles.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
