@@ -208,15 +208,15 @@
             </div> 
             <div class="column right">
                 <p style="font-weight: bold; border-bottom: 2px solid black;" >Pay To Win!</p>
-                 <button class="payButton" id="coins100" style="vertical-align: 20%">CRAFTCOINS: 100<br /> $50 </button>
-                 <button class="payButton" id="coins1000" style="vertical-align: 20%">CRAFTCOINS: 1000<br /> $500 </button> <br /><br />
-                 <button class="payButton" id="cash100" style="vertical-align: 20%">COBBERCASH: 100<br /> $50 </button>
-                 <button class="payButton" id="cash1000" style="vertical-align: 20%">COBBERCASH: 1000<br /> $500 </button> <br /><br />
-                 <button class="payButton" id="bucks100" style="vertical-align: 20%">KAMELBUCKS: 100<br /> $50 </button>
-                 <button class="payButton" id="bucks1000" style="vertical-align: 20%">KAMELBUCKS: 1000<br /> $500 </button> <br /><br />
-                 <button class="payButton" id="lamplpay100" style="vertical-align: 20%">LAMPLCOINS: 100<br /> $50 </button>
-                 <button class="payButton" id="lamplpay1000" style="vertical-align: 20%">LAMPLCOINS: 1000<br /> $500 </button> <br /><br />
-                 <button class="payButton" id="chadpay1" style="vertical-align: 20%">CHAD: 1<br /> $100,000 </button> <br /><br />
+                <a class="button" id="coins100" style="vertical-align: 20%" href="MasterProduct.aspx?id=1">CRAFTCOINS: 100<br /> $50 </a>
+                <a class="button" id="coins1000" style="vertical-align: 20%" href="MasterProduct.aspx?id=2">CRAFTCOINS: 1000<br /> $500 </a> <br />
+                <a class="button" id="cash100" style="vertical-align: 20%" href="MasterProduct.aspx?id=3">COBBERCASH: 100<br /> $50 </a>
+                <a class="button" id="cash1000" style="vertical-align: 20%" href="MasterProduct.aspx?id=4">COBBERCASH: 1000<br /> $500 </a> <br />
+                <a class="button" id="bucks100" style="vertical-align: 20%" href="MasterProduct.aspx?id=5">KAMELBUCKS: 100<br /> $50 </a>
+                <a class="button" id="bucks1000" style="vertical-align: 20%" href="MasterProduct.aspx?id=6">KAMELBUCKS: 1000<br /> $500 </a> <br />
+                <a class="button" id="lampl100" style="vertical-align: 20%" href="MasterProduct.aspx?id=7">LAMPLCOINS: 100<br /> $50 </a>
+                <a class="button" id="lampl1000" style="vertical-align: 20%" href="MasterProduct.aspx?id=8">LAMPLCOINS: 1000<br /> $500 </a> <br />
+                <a class="button" id="chadpay1" style="vertical-align: 20%" href="MasterProduct.aspx?id=9">CHAD: 1<br /> $100,000 </a> <br />
             </div>
         </div>
     </div> 

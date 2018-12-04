@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CRUD.aspx.cs" Inherits="TheLoggingCompanyProject.CRUD" %>
+﻿<%--<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CRUD.aspx.cs" Inherits="TheLoggingCompanyProject.CRUD" %>
 <%@ Register TagPrefix="template" TagName="navControl" Src="~/architecture/Nav.ascx" %>
 <%@ Register TagPrefix="template" TagName="footerControl" Src="~/architecture/Footer.ascx" %>
 
@@ -74,4 +74,4 @@
         </div>
     </form>
 </body>
-</html>
+</html>--%>

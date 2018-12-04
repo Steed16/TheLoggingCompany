@@ -92,6 +92,7 @@
     <Content Include="CRUD.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Game.aspx" />
+    <Content Include="MasterProduct.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="Store.aspx" />
     <Content Include="wwwroot\css\gameStyle.css" />
@@ -139,7 +140,6 @@
     </Compile>
     <Compile Include="CRUD.aspx.cs">
       <DependentUpon>CRUD.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CRUD.aspx.designer.cs">
       <DependentUpon>CRUD.aspx</DependentUpon>
@@ -157,6 +157,13 @@
     </Compile>
     <Compile Include="Game.aspx.designer.cs">
       <DependentUpon>Game.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterProduct.aspx.cs">
+      <DependentUpon>MasterProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterProduct.aspx.designer.cs">
+      <DependentUpon>MasterProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignIn.aspx.cs">

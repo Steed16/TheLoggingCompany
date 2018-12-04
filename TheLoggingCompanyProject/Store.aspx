@@ -59,11 +59,11 @@
         <div class="store">
             <div class="column left">
                 <h2>Shirt 1</h2>
-                <h2><button id="shirt1">Add To Cart</button></h2>
+                <h2><a class="button" id="shirt1" href="MasterProduct.aspx?id=7">Go to</a></h2>
             </div>
             <div class="column right">
                 <h2>lamplcoins x100</h2>
-                <h2><button>Add to Cart</button></h2>
+                <h2><a class="button" id="lampl100" href="MasterProduct.aspx?id=10">Go to</a></h2>
             </div>
         </div>
     </div>
