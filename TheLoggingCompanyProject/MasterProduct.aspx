@@ -52,10 +52,14 @@ section {
 }
     </style>
 
-<% @{var value = Convert.ToInt32(Request.QueryString["Id"]);}
-@if (value == "1") {
-    string test = "This works"
-}%>
+<% var value = Convert.ToInt32(Request.QueryString["Id"]);
+    string test;
+    if (value == 1)
+    {
+        test = "applesauce";
+    }
+
+%>
 <%--@foreach (var product in Model.prodcuts)
 {
      if (product.products == value) 
@@ -72,7 +76,7 @@ section {
  
   <header>
     <hgroup>
-      <h1><% Response.Write(test);%> </h1>
+      <h1><% Response.Write(test); %>  </h1>
       <h3>Your best purchase ever</h3>
     </hgroup>
   </header>
