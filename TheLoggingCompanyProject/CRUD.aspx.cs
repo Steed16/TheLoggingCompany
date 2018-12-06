@@ -13,7 +13,7 @@ namespace TheLoggingCompanyProject
     public partial class CRUD : System.Web.UI.Page
     {
 
-
+        /*
         //Starting connection
         MySqlConnection conn = new MySqlConnection();
         protected void Page_Load(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace TheLoggingCompanyProject
                     Response.Write(ex.Message);
                 }
             }
-                //*/
+                
 
                 if (conn.State == ConnectionState.Open)
                 {
@@ -110,7 +110,7 @@ namespace TheLoggingCompanyProject
 
                     lblErrorMessage.Text = ex.Message;
                 }
-            //*/
+            
         }
 
     void Clear()
@@ -160,7 +160,7 @@ namespace TheLoggingCompanyProject
                     gvUser.DataSource = dtbl;
                     gvUser.DataBind();
                 }
-                //*/
+                //*
         }
 
     protected void lnkSelect_OnClick(object sender, EventArgs e)
@@ -185,7 +185,7 @@ namespace TheLoggingCompanyProject
                 btnSave.Text = "Update";
                 btnDelete.Enabled = true;
             }
-            //*/
+            //*
     }
 
     protected void btnDelete_Click(object sender, EventArgs e)
@@ -209,7 +209,7 @@ namespace TheLoggingCompanyProject
                     GridFill();
                     Clear();
                     lblSuccessMessage.Text = "Deleted Successfully";
-                    //*/
+                    //*
                 }
             }
             catch (Exception ex)
@@ -217,6 +217,7 @@ namespace TheLoggingCompanyProject
                 lblErrorMessage.Text = ex.Message;
             }
         }
+        //*/
+    }
 
-}
 }

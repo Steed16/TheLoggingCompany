@@ -15,25 +15,42 @@
     
     <div class="content">
         <div id ="about">
-            <h3 style="font: bold">About the people</h3>
-
+            <!--<h3 style="font: bold">About the people</h3>--> 
+            <h3 style="font-weight: bold;" >About the Creators</h3>
             <div class="bio">
-                <h3>Cody Weiland</h3>
+                <h3 style="font-weight: bold">Cody W.</h3>
                 <br />  
-                <h3>Who you are!</h3>
-            </div>
-            <div class="bio">
-                <h3>Dustin Steedsman</h3>
-                <br />
-                <h3>I am a junior at Concordia College.
-                    I like video games.
+                <h3>
+                    Who you are!
+                    <asp:Hyperlink id="codyLink" NavigateUrl="https://www.linkedin.com/in/cbweiland/" runat="server" Text="Linkedin Profile" />
                 </h3>
             </div>
             <div class="bio">
-                <h3>Chad</h3>
+                <h3 style="font-weight: bold">Dustin S.</h3>
+                <br />
+                <h3>
+                    I am a junior at Concordia College.
+                    I like video games.
+                    <asp:Hyperlink id="dustinLink" NavigateUrl="https://omfgdogs.com/" runat="server" Text="Linkedin Profile" />
+                </h3>
             </div>
             <div class="bio">
-                <h3>Zeke</h3>
+                <h3 style="font-weight: bold">Nick R.</h3>
+                <asp:Image ID="nickImage" ImageUrl="wwwroot/css/images/nickImage.png" runat="server" Width="104px" BorderStyle="Inset" />
+                <br />
+                <h3>
+                    A current undergraduate at Concordia College with a major in Computer Science. <br />
+                    Texas native actively searching for jobs within the computer field specifically in programming and development. <br />
+                    Buy my shirt, I am also known as 'Chad', 'The Mexican God', 'The Best', and 'The Most Humble' ;)
+                    <asp:Hyperlink id="nickLink" NavigateUrl="https://www.linkedin.com/in/nrebollo" runat="server" Text="Linkedin Profile" />
+                </h3>
+            </div>
+            <div class="bio">
+                <h3 style="font-weight: bold">Zeke</h3>
+                <br />
+                <h3>
+                    <asp:Hyperlink id="zekeLink" NavigateUrl="http://www.ezekieltown.net" runat="server" Text="Personal Website" />
+                </h3>
             </div>
         </div>
     </div> 

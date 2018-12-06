@@ -106,6 +106,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="wwwroot\css\images\beaver.gif" />
+    <Content Include="wwwroot\css\images\nickImage.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
