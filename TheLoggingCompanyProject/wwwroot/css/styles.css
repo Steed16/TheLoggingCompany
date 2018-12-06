@@ -114,13 +114,11 @@ h3 {
 }
 
 .bio {
-    /*width: 150px;*/
     width: 738px;
     height: 300px;
     /*background-color: lightgrey;*/
-    border: 2px solid black;
-    display: block;
-    /*float: left;*/
+    /*border: 2px solid black;*/
+    /*display: block;*/
     float: none;
 }
 
