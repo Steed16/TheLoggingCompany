@@ -1,4 +1,4 @@
-﻿<%--<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CRUD.aspx.cs" Inherits="TheLoggingCompanyProject.CRUD" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CRUD.aspx.cs" Inherits="TheLoggingCompanyProject.CRUD" %>
 <%@ Register TagPrefix="template" TagName="navControl" Src="~/architecture/Nav.ascx" %>
 <%@ Register TagPrefix="template" TagName="footerControl" Src="~/architecture/Footer.ascx" %>
 
@@ -15,26 +15,26 @@
             <table>
                 <tr>
                     <td>
-                        <asp:Label Text="Username" runat="server" />
+                        <asp:Label Text="Id (only use to delete)" runat="server" />
                     </td>
                     <td colspan="2">
-                        <asp:TextBox ID="txtUsername" runat="server" />
+                        <asp:TextBox ID="txtId" runat="server" />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <asp:Label Text="Email" runat="server" />
+                        <asp:Label Text="Product Name" runat="server" />
                     </td>
                     <td colspan="2">
-                        <asp:TextBox ID="txtEmail" runat="server" />
+                        <asp:TextBox ID="txtPname" runat="server" />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <asp:Label Text="Password" runat="server" />
+                        <asp:Label Text="Price" runat="server" />
                     </td>
                     <td colspan="2">
-                        <asp:TextBox ID="txtPassword" runat="server" />
+                        <asp:TextBox ID="txtPrice" runat="server" />
                     </td>
                 </tr>
                 <tr>
@@ -61,9 +61,9 @@
             <br/. />
             <asp:GridView ID="gvUser" runat="server" AutoGenerateColumns="False">
                 <Columns>
-                    <asp:BoundField DataField="username" HeaderText="Username" />
-                    <asp:BoundField DataField="email" HeaderText="Email" />
-                    <asp:BoundField DataField="hPassword" HeaderText="Password" />
+                    <asp:BoundField DataField="Id" HeaderText="Id" />
+                    <asp:BoundField DataField="Pname" HeaderText="Pname" />
+                    <asp:BoundField DataField="Price" HeaderText="Price" />
                     <asp:TemplateField>
                         <ItemTemplate>
                             <asp:LinkButton Text="Select" ID="lnkSelect" CommandArgument='<%# Eval("UserID") %>' runat="server" OnClick="lnkSelect_OnClick" />
@@ -74,4 +74,4 @@
         </div>
     </form>
 </body>
-</html>--%>
+</html>
