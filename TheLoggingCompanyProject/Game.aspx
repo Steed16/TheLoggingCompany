@@ -22,6 +22,11 @@
         //numLogs++;
         //document.getElementById("logs").innerHTML = numLogs;
         //
+        //
+        //https://www.deviantart.com/wanyo/art/Tainted-Tali-Beaver-Walk-Animation-656823674
+        //https://www.deviantart.com/wanyo/art/Tainted-Tali-Beaver-Sleep-Animation-656824203
+        //https://www.deviantart.com/wanyo/art/Tainted-Tali-Beaver-Wag-Animation-656824517
+
 
         var numLogs = 0; //Total number of logs
         var autoHuman = 0; //Number of Humans
@@ -94,8 +99,12 @@
 
 
         window.setInterval(function () {
-	
-            chopLog((autoHuman * autoHumanOutput) + (autoBeaverOutput * autoBeaver) + (autoSBeaverOutput * autoSBeaver));
+
+            var stupid = autoHuman * autoHumanOutput;
+            var moreStupid = autoBeaverOutput * autoBeaver;
+            var evenMoreStupid = autoSBeaverOutput * autoSBeaver;
+
+            chopLog(stupid, moreStupid, evenMoreStupid);
  
 	
         }, 1000);
