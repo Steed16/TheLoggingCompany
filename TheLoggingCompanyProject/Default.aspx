@@ -28,7 +28,6 @@
       
     <%-- <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" /> --%>
    
-=======
     <img src="wwwroot/images/beaver.gif" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;">   
 
 </body>

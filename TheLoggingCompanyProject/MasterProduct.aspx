@@ -81,7 +81,7 @@ section {
             <li>buy more!!!</li>
         </ul>
     </details>
-   <p>Price: $<p runat="server" id="price"></p></p>
+   <p>Price: $<span runat="server" id="price"></span></p>
   <button>Buy Now</button>
  
   </section>
