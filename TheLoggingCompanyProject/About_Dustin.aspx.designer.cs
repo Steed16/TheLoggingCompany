@@ -12,9 +12,5 @@ namespace TheLoggingCompanyProject {
 	
 	
 	public partial class About {
-		
-		protected TheLoggingCompanyProject.architecture.Nav navHtml;
-		
-		protected TheLoggingCompanyProject.architecture.Footer footerHtml;
 	}
 }

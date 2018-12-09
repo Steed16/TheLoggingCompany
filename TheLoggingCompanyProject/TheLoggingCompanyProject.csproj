@@ -107,6 +107,10 @@
     </Content>
     <Content Include="wwwroot\css\images\beaver.gif" />
     <Content Include="wwwroot\css\images\nickImage.png" />
+    <Content Include="About_Cody.aspx" />
+    <Content Include="About_Dustin.aspx" />
+    <Content Include="About_Nick.aspx" />
+    <Content Include="About_Zeke.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -186,6 +190,30 @@
     </Compile>
     <Compile Include="Store.aspx.designer.cs">
       <DependentUpon>Store.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_Cody.aspx.cs">
+      <DependentUpon>About_Cody.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_Cody.aspx.designer.cs">
+      <DependentUpon>About_Cody.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_Dustin.aspx.cs">
+      <DependentUpon>About_Dustin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_Dustin.aspx.designer.cs">
+      <DependentUpon>About_Dustin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_Nick.aspx.cs">
+      <DependentUpon>About_Nick.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_Nick.aspx.designer.cs">
+      <DependentUpon>About_Nick.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_Zeke.aspx.cs">
+      <DependentUpon>About_Zeke.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_Zeke.aspx.designer.cs">
+      <DependentUpon>About_Zeke.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

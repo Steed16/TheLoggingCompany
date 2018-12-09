@@ -116,10 +116,31 @@ h3 {
 .bio {
     width: 738px;
     height: 300px;
-    /*background-color: lightgrey;*/
-    /*border: 2px solid black;*/
-    /*display: block;*/
     float: none;
+}
+
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 120px;
+    left: 10px;
+    background-color:lightgray;
+    overflow-x: hidden;
+    padding: 8px 0;
+    border: 2px solid black;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: white;
 }
 
 h6 {
