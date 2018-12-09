@@ -25,11 +25,17 @@
             </div>
      
         <div class="Nick_bio">
-            <h3>Nick R.</h3>
-            <p>Nick needs to write up his bio. Place it here. Maybe first paragraph is current academic info like
-                    the current graduation year, major/minor, college activities you're involved in.</p>
-            <p>Next paragraph could be work experience, personal website, linkedin profile, etc..</p>
-            <p>You're responisbility in creating the website.</p>
+            <h3 style="text-align: center; font-weight: bold;">Nick R.</h3>
+            <p>A college student with the expected graduation date of winter 2019. 
+                    Majoring in computer science with a concentration in computing and minoring 
+                    in Spanish and Mathematics. Born and raised in Texas with opportunity to 
+                    study in a private, prestigious institution.</p>
+            <p>Working on campus at the Information Technology center as well as the Spanish department.
+                    More of my work experience can be found on my linkedin profile as well as my 
+                    my personal website.</p>
+            <p>In the creation of this project, each group member found their strengths and weaknesses 
+                    and we tailored responsibilities accordingly. I styled the "About", "Contact" and personal 
+                    about pages for each group member.</p>
         </div>
     </div>
 </div>

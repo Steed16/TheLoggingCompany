@@ -25,7 +25,7 @@
             </div>
      
         <div class="Cody_bio">
-            <h3>Cody W.</h3>
+            <h3 style="text-align: center; font-weight: bold;">Cody W.</h3>
             <p>Cody needs to write up his bio. Place it here. Maybe first paragraph is current academic info like
                     the current graduation year, major/minor, college activities you're involved in.</p>
             <p>Next paragraph could be work experience, personal website, linkedin profile, etc..</p>

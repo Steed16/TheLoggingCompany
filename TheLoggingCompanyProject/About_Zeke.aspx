@@ -25,7 +25,7 @@
             </div>
      
         <div class="Zeke_bio">
-            <h3>Zeke T.</h3>
+            <h3 style="text-align: center; font-weight: bold;">Zeke T.</h3>
             <p>Zeke needs to write up his bio. Place it here. Maybe first paragraph is current academic info like
                     the current graduation year, major/minor, college activities you're involved in.</p>
             <p>Next paragraph could be work experience, personal website, linkedin profile, etc..</p>
