@@ -16,9 +16,9 @@
     <!--- Sidebar Navigation !--> 
     <div class="sidenav">
         <a href="About_Cody.aspx">Cody W.</a>
-        <a href="#">Dustin S.</a>
-        <a href="#">Nick R.</a>
-        <a href="#">Zeke T.</a>
+        <a href="About_Dustin.aspx">Dustin S.</a>
+        <a href="About_Nick.aspx">Nick R.</a>
+        <a href="About_Zeke.aspx">Zeke T.</a>
     </div>
     
     <div class="content">
