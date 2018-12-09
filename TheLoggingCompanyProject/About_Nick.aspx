@@ -36,6 +36,13 @@
             <p>In the creation of this project, each group member found their strengths and weaknesses 
                     and we tailored responsibilities accordingly. I styled the "About", "Contact" and personal 
                     about pages for each group member.</p>
+            <div>
+                <img src="/wwwroot/css/images/nickImage.png" alt="nickImage" class="responsive"/>
+            </div> 
+            <div class="personalLink">
+                <h3 style="font-weight: bold;">Linkedin:</h3> 
+                <p>https://www.linkedin.com/in/nrebollo/</p>
+            </div>
         </div>
     </div>
 </div>

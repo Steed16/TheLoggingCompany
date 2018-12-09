@@ -31,6 +31,13 @@
             <p>Next paragraph could be work experience, personal website, linkedin profile, etc..</p>
             <p>You're responisbility in creating the website.</p>
         </div>
+        <div>
+            <img src="/wwwroot/css/images/blankImage.png" alt="blankImage" class="responsive"/>
+        </div> 
+        <div class="personalLink">
+            <h3 style="font-weight: bold;">Linkedin:</h3> 
+            <p>Link here</p>
+        </div>
     </div>
 </div>
     <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />

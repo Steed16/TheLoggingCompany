@@ -119,6 +119,14 @@ h3 {
     float: none;
 }
 
+.responsive {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    float: left;
+    margin: 4px 6px 0 6px;
+}
+
 .sidenav {
     width: 130px;
     position: fixed;

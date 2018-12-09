@@ -23,13 +23,20 @@
             <a href="About_Nick.aspx">Nick R.</a>
             <a href="About_Zeke.aspx">Zeke T.</a>
             </div>
-     
+        
         <div class="Zeke_bio">
             <h3 style="text-align: center; font-weight: bold;">Zeke T.</h3>
             <p>Zeke needs to write up his bio. Place it here. Maybe first paragraph is current academic info like
                     the current graduation year, major/minor, college activities you're involved in.</p>
             <p>Next paragraph could be work experience, personal website, linkedin profile, etc..</p>
             <p>You're responisbility in creating the website.</p>
+        </div>
+        <div>
+            <img src="/wwwroot/css/images/blankImage.png" alt="blankImage" class="responsive"/>
+        </div> 
+        <div class="personalLink">
+            <h3 style="font-weight: bold;">Linkedin:</h3> 
+            <p>Link here</p>
         </div>
     </div>
 </div>
