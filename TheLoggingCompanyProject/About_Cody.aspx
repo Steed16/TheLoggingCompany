@@ -26,10 +26,9 @@
      
         <div class="Cody_bio">
             <h3 style="text-align: center; font-weight: bold;">Cody W.</h3>
-            <p>Cody needs to write up his bio. Place it here. Maybe first paragraph is current academic info like
-                    the current graduation year, major/minor, college activities you're involved in.</p>
-            <p>Next paragraph could be work experience, personal website, linkedin profile, etc..</p>
-            <p>You're responisbility in creating the website.</p>
+            <p>A senior graduating in May 19'.  Majoring in Computer Science with a Coaching minor. Born in Crookston, MN. </p>
+            <p>I worked at ITS on campus for a year and a half. Now currently an intern at TrueIT.</p>
+            <p>My contribution to the website is all over.  I helped pioneer the early look of the site.  Organized the backend structure.  Helped design and made the game.  Set up Home page.  Made validation for the contact page. </p>
         </div>
         <div>
             <img src="/wwwroot/css/images/blankImage.png" alt="blankImage" class="responsive"/>
