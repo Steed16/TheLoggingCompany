@@ -32,18 +32,22 @@
         var autoHuman = 0; //Number of Humans
         var autoBeaver = 0; //Number of normal Beavers
         var autoSBeaver = 0; //Number of selectively bred Beavers
-        var autoHumanOutput = 1
-        var autoBeaverOutput = 4
-        var autoSBeaverOutput = 8
+        var autoGBeaver = 0;
+        var autoRBeaver = 0;
+        var autoHumanOutput = 1;
+        var autoBeaverOutput = 4;
+        var autoSBeaverOutput = 8;
+        var autoGBeaverOutput = 16;
+        var autoRBeaverOutput = 100;
 
         
 
 
         
-       function chopLog(num1, num2, num3) {
-           numLogs = numLogs + num1 + num2 + num3;
+       function chopLog(num1, num2, num3, num4, num5) {
+           numLogs = numLogs + num1 + num2 + num3 + num4 + num5;
            document.getElementById("logs").innerHTML = numLogs;
-           document.getElementById('logsS').innerHTML = (autoHuman * autoHumanOutput) + (autoBeaverOutput * autoBeaver) + (autoSBeaverOutput * autoSBeaver); 
+           document.getElementById('logsS').innerHTML = (autoHuman * autoHumanOutput) + (autoBeaverOutput * autoBeaver) + (autoSBeaverOutput * autoSBeaver) + (autoGBeaverOutput * autoGBeaver) + (autoRBeaverOutput * autoRBeaver); 
         };
 
         function buyHuman() {
@@ -78,9 +82,9 @@
 
         function buySBeaver() {
             if (autoSBeaver == 0) {                                          //made to do intial cost
-                var beaverSCost = 10000;
+                var beaverSCost = 5000;
             } else {
-                var beaverSCost = Math.floor(10 * Math.pow(1.1, autoSBeaver)) + 10000; //math.power(base, Exponent)
+                var beaverSCost = Math.floor(10 * Math.pow(1.1, autoSBeaver)) + 5000; //math.power(base, Exponent)
             }
             if(numLogs >= beaverSCost) {
                 autoSBeaver++;
@@ -88,8 +92,40 @@
                 document.getElementById('sBeaver').innerHTML = autoSBeaver;   //updates the number of autoSBeavers for the user
                 document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
             };
-            var nextCost = Math.floor(10 * Math.pow(1.1,autoSBeaver)) + 10000;       //works out the cost of the next human
+            var nextCost = Math.floor(10 * Math.pow(1.1,autoSBeaver)) + 5000;       //works out the cost of the next human
             document.getElementById('sBeaverCost').innerHTML = nextCost;
+        };
+
+        function buyGBeaver() {
+            if (autoGBeaver == 0) {                                          //made to do intial cost
+                var beaverGCost = 10000;
+            } else {
+                var beaverGCost = Math.floor(10 * Math.pow(1.1, autoGBeaver)) + 10000; //math.power(base, Exponent)
+            }
+            if(numLogs >= beaverGCost) {
+                autoGBeaver++;
+                numLogs = numLogs - beaverGCost;
+                document.getElementById('gBeaver').innerHTML = autoGBeaver;   //updates the number of autoSBeavers for the user
+                document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
+            };
+            var nextCost = Math.floor(10 * Math.pow(1.1,autoGBeaver)) + 10000;       //works out the cost of the next human
+            document.getElementById('gBeaverCost').innerHTML = nextCost;
+        };
+
+        function buyRBeaver() {
+            if (autoRBeaver == 0) {                                          //made to do intial cost
+                var beaverRCost = 10000;
+            } else {
+                var beaverRCost = Math.floor(10 * Math.pow(1.1, autoRBeaver)) + 10000; //math.power(base, Exponent)
+            }
+            if(numLogs >= beaverRCost) {
+                autoRBeaver++;
+                numLogs = numLogs - beaverRCost;
+                document.getElementById('rBeaver').innerHTML = autoRBeaver;   //updates the number of autoSBeavers for the user
+                document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
+            };
+            var nextCost = Math.floor(10 * Math.pow(1.1,autoRBeaver)) + 10000;       //works out the cost of the next human
+            document.getElementById('rBeaverCost').innerHTML = nextCost;
         };
 
         function buyTechnology() {
@@ -103,8 +139,10 @@
             var stupid = autoHuman * autoHumanOutput;
             var moreStupid = autoBeaverOutput * autoBeaver;
             var evenMoreStupid = autoSBeaverOutput * autoSBeaver;
+            var dumb = autoGBeaverOutput * autoGBeaver;
+            var cool = autoRBeaverOutput * autoRBeaver;
 
-            chopLog(stupid, moreStupid, evenMoreStupid);
+            chopLog(stupid, moreStupid, evenMoreStupid, dumb, cool);
  
 	
         }, 1000);
@@ -122,7 +160,7 @@
                 <!-- Resources -->
                 <div class="resources">
                     <p style="font-weight: bold; border-bottom: 2px solid black;" >Resources</p>
-                    <button id="cutWood" onclick="chopLog(1,0,0)">
+                    <button id="cutWood" onclick="chopLog(1,0,0,0,0)">
                         Chop that Wood!
                     </button>
                     <span id="logCount" class="toolTipText"></span>
@@ -188,7 +226,7 @@
                     <p>Selectively Bred Beavers: 
                         <span id="sBeaver">0</span><br />
                         Cost:
-                        <span id="sBeaverCost">10000</span>
+                        <span id="sBeaverCost">5000</span>
                     </p>
                     <button id="buySBeaver" onclick="buySBeaver()">
                     Buy Selectively Bred Beavers
@@ -198,9 +236,18 @@
                     <p>Genetically Modified Beavers: 
                         <span id="gBeaver">0</span><br />
                         Cost:
-                        <span id="gBeaverCost">0</span>
+                        <span id="gBeaverCost">10000</span>
                     </p>
-                    <button id="buyGBeaver">
+                    <button id="buyGBeaver" onclick="buyGBeaver()">
+                    Buy Genetically Modified Beaver
+                    </button>
+                    <span id="rBeaverCount" class="toolTipText"></span>
+                    <p>CYBORG BEAVERS: 
+                        <span id="rBeaver">0</span><br />
+                        Cost:
+                        <span id="rBeaverCost">100000</span>
+                    </p>
+                    <button id="buyRBeaver" onclick="buyRBeaver()">
                     Buy Genetically Modified Beaver
                     </button>
                 </div>
