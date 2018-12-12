@@ -33,6 +33,7 @@ h1, h4 {
 }
 h1 { 
   font-size: 24pt;
+  text-align: center;
 }
 header {
   margin-bottom: 20px;
@@ -59,15 +60,17 @@ section {
     <div class="product">
  
   <header>
-    <hgroup>
+    <hgroup style="text-align: center;">
       <h1 runat="server" id="title"> </h1>
-      <h3>Your best purchase ever</h3>
+      <h3 style="text-align: center;">10/10 -IGN</h3>
     </hgroup>
   </header>
  
   <figure>
-    <img runat="server" id="imageProduct">
+    <img src="/wwwroot/css/images/ChadTshirt_front.jpg" alt="tshirt image" class="productPic"/>
+    <img src="/wwwroot/css/images/ChadTshirt_Back.jpg" alt="Back tshirt image" class="productPic"/>
   </figure>
+            
  
   <section>
  
@@ -77,8 +80,9 @@ section {
     <details>
     <summary>Product Features</summary>
           <ul>
-            <li>cool stuff</li>
-            <li>buy more!!!</li>
+            <li>Impress your friends with this awesome shirt</li>
+            <li>It'll give you clout</li>
+            <li>It will improve your life drastically</li>
         </ul>
     </details>
    <p>Price: $<span runat="server" id="price"></span></p>
