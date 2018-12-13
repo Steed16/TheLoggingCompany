@@ -27,22 +27,49 @@
         //https://www.deviantart.com/wanyo/art/Tainted-Tali-Beaver-Sleep-Animation-656824203
         //https://www.deviantart.com/wanyo/art/Tainted-Tali-Beaver-Wag-Animation-656824517
 
+        //Number of logs
+        var numLogs = 0; 
 
-        var numLogs = 0; //Total number of logs
-        var autoHuman = 0; //Number of Humans
-        var autoBeaver = 0; //Number of normal Beavers
-        var autoSBeaver = 0; //Number of selectively bred Beavers
+        //Number of auto miners
+        var autoHuman = 0;
+        var autoBeaver = 0; 
+        var autoSBeaver = 0;
         var autoGBeaver = 0;
         var autoRBeaver = 0;
+
+        //Base output of auto miners
         var autoHumanOutput = 1;
         var autoBeaverOutput = 4;
         var autoSBeaverOutput = 8;
         var autoGBeaverOutput = 16;
         var autoRBeaverOutput = 100;
 
-        
+        //Is unlocked?
+        var unlockBeaver = false;
+        var unlockSBeaver = false;
+        var unlockGBeaver = false;
+        var unlockRBeaver = false;
 
+        //Tech modifiers
+        var techHuman = 0;
+        var techBeaver = 0;
+        var techSBeaver = 0;
+        var techGBeaver = 0;
+        var techRBeaver = 0;
 
+        //Tech List
+        var list = [
+            { name: 'All the Caffeine (improve Humans by 10%)', effect: .1, cost: 1, miner: human },
+            { name: 'You actually hiring Beavers? (Yes, you can hire Beavers now)', effect: true, cost: 1, miner: beaver },
+            { name: 'Pick the best ones, trust me (Unlocks selectively bred Beavers)', effect: true, cost: 1, miner: sBeaver },
+            { name: 'Genetically Modified Beavers..? (unlocks Genetically Modified Beavers)', effect: true, cost: 1, miner: gBeaver },
+            { name: 'These Beavers are Metal (unlocks Cyborg Beavers)', effect: true, cost: 1, miner: rBeaver },            
+            { name: 'Increase Beavers working (improve Beavers by 10%)', effect: .1, cost: 1, miner: beaver },
+            { name: 'Increase Selectively Beavers working (improve Selectively Bred Beavers by 10%)', effect: .1, cost: 1, miner: sBeaver },
+            { name: 'Increase Genetically Modified Beavers working (improve Genetically Modified Beavers by 10%)', effect: .1, cost: 1, miner: gBeaver },
+            { name: 'Increase CYBORG Beavers working (improve CYBORG Beavers by 10%)', effect: .1, cost: 1, miner: rBeaver },
+        ];
+        list.reverse();
         
        function chopLog(num1, num2, num3, num4, num5) {
            numLogs = numLogs + num1 + num2 + num3 + num4 + num5;
@@ -50,6 +77,7 @@
            document.getElementById('logsS').innerHTML = (autoHuman * autoHumanOutput) + (autoBeaverOutput * autoBeaver) + (autoSBeaverOutput * autoSBeaver) + (autoGBeaverOutput * autoGBeaver) + (autoRBeaverOutput * autoRBeaver); 
         };
 
+        // #region miners
         function buyHuman() {
             var humanCost = Math.floor(10 * Math.pow(1.1, autoHuman));      //math.power(base, Exponent)
             if(numLogs >= humanCost) {
@@ -64,72 +92,121 @@
         };
 
         function buyBeaver() {
-            if (autoBeaver == 0) {                                          //made to do intial cost
-                var beaverCost = 1000;  
-            } else {
-                var beaverCost = Math.floor(10 * Math.pow(1.1, autoBeaver)) + 1000; //math.power(base, Exponent)
-            }
+            if (unlockBeaver == true) {
+                if (autoBeaver == 0) {                                          //made to do intial cost
+                    var beaverCost = 1000;
+                } else {
+                    var beaverCost = Math.floor(10 * Math.pow(1.1, autoBeaver)) + 1000; //math.power(base, Exponent)
+                }
 
-            if(numLogs >= beaverCost) {
-                autoBeaver++;
-                numLogs = numLogs - beaverCost;
-                document.getElementById('beaver').innerHTML = autoBeaver;   //updates the number of autoBeavers for the user
-                document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
-            };
-            var nextCost = Math.floor(10 * Math.pow(1.1,autoBeaver)) + 1000;       //works out the cost of the next human
-            document.getElementById('beaverCost').innerHTML = nextCost;
+                if (numLogs >= beaverCost) {
+                    autoBeaver++;
+                    numLogs = numLogs - beaverCost;
+                    document.getElementById('beaver').innerHTML = autoBeaver;   //updates the number of autoBeavers for the user
+                    document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
+                };
+                var nextCost = Math.floor(10 * Math.pow(1.1, autoBeaver)) + 1000;       //works out the cost of the next human
+                document.getElementById('beaverCost').innerHTML = nextCost;
+            }
         };
 
         function buySBeaver() {
-            if (autoSBeaver == 0) {                                          //made to do intial cost
-                var beaverSCost = 5000;
-            } else {
-                var beaverSCost = Math.floor(10 * Math.pow(1.1, autoSBeaver)) + 5000; //math.power(base, Exponent)
+            if (unlockSBeaver == true) {
+                if (autoSBeaver == 0) {                                          //made to do intial cost
+                    var beaverSCost = 5000;
+                } else {
+                    var beaverSCost = Math.floor(10 * Math.pow(1.1, autoSBeaver)) + 5000; //math.power(base, Exponent)
+                }
+                if (numLogs >= beaverSCost) {
+                    autoSBeaver++;
+                    numLogs = numLogs - beaverSCost;
+                    document.getElementById('sBeaver').innerHTML = autoSBeaver;   //updates the number of autoSBeavers for the user
+                    document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
+                };
+                var nextCost = Math.floor(10 * Math.pow(1.1, autoSBeaver)) + 5000;       //works out the cost of the next human
+                document.getElementById('sBeaverCost').innerHTML = nextCost;
             }
-            if(numLogs >= beaverSCost) {
-                autoSBeaver++;
-                numLogs = numLogs - beaverSCost;
-                document.getElementById('sBeaver').innerHTML = autoSBeaver;   //updates the number of autoSBeavers for the user
-                document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
-            };
-            var nextCost = Math.floor(10 * Math.pow(1.1,autoSBeaver)) + 5000;       //works out the cost of the next human
-            document.getElementById('sBeaverCost').innerHTML = nextCost;
         };
 
         function buyGBeaver() {
-            if (autoGBeaver == 0) {                                          //made to do intial cost
-                var beaverGCost = 10000;
-            } else {
-                var beaverGCost = Math.floor(10 * Math.pow(1.1, autoGBeaver)) + 10000; //math.power(base, Exponent)
+            if (unlockGBeaver == true) {
+                if (autoGBeaver == 0) {                                          //made to do intial cost
+                    var beaverGCost = 10000;
+                } else {
+                    var beaverGCost = Math.floor(10 * Math.pow(1.1, autoGBeaver)) + 10000; //math.power(base, Exponent)
+                }
+                if (numLogs >= beaverGCost) {
+                    autoGBeaver++;
+                    numLogs = numLogs - beaverGCost;
+                    document.getElementById('gBeaver').innerHTML = autoGBeaver;   //updates the number of autoSBeavers for the user
+                    document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
+                };
+                var nextCost = Math.floor(10 * Math.pow(1.1, autoGBeaver)) + 10000;       //works out the cost of the next human
+                document.getElementById('gBeaverCost').innerHTML = nextCost;
             }
-            if(numLogs >= beaverGCost) {
-                autoGBeaver++;
-                numLogs = numLogs - beaverGCost;
-                document.getElementById('gBeaver').innerHTML = autoGBeaver;   //updates the number of autoSBeavers for the user
-                document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
-            };
-            var nextCost = Math.floor(10 * Math.pow(1.1,autoGBeaver)) + 10000;       //works out the cost of the next human
-            document.getElementById('gBeaverCost').innerHTML = nextCost;
         };
 
         function buyRBeaver() {
-            if (autoRBeaver == 0) {                                          //made to do intial cost
-                var beaverRCost = 10000;
-            } else {
-                var beaverRCost = Math.floor(10 * Math.pow(1.1, autoRBeaver)) + 10000; //math.power(base, Exponent)
+            if (unlockRBeaver == true) {
+                if (autoRBeaver == 0) {                                          //made to do intial cost
+                    var beaverRCost = 10000;
+                } else {
+                    var beaverRCost = Math.floor(10 * Math.pow(1.1, autoRBeaver)) + 10000; //math.power(base, Exponent)
+                }
+                if (numLogs >= beaverRCost) {
+                    autoRBeaver++;
+                    numLogs = numLogs - beaverRCost;
+                    document.getElementById('rBeaver').innerHTML = autoRBeaver;   //updates the number of autoSBeavers for the user
+                    document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
+                };
+                var nextCost = Math.floor(10 * Math.pow(1.1, autoRBeaver)) + 10000;       //works out the cost of the next human
+                document.getElementById('rBeaverCost').innerHTML = nextCost;
             }
-            if(numLogs >= beaverRCost) {
-                autoRBeaver++;
-                numLogs = numLogs - beaverRCost;
-                document.getElementById('rBeaver').innerHTML = autoRBeaver;   //updates the number of autoSBeavers for the user
-                document.getElementById('logs').innerHTML = numLogs;        //updates total number of logs
-            };
-            var nextCost = Math.floor(10 * Math.pow(1.1,autoRBeaver)) + 10000;       //works out the cost of the next human
-            document.getElementById('rBeaverCost').innerHTML = nextCost;
         };
+        // #endregion
 
-        function buyTechnology() {
 
+        function buyTechnology(num) {
+
+
+            if (num == 0) {
+
+                if (numLogs >= tech1.cost) {
+
+                    if (tech1.miner == "human") {
+                        techHuman = techHuman + tech1.effect;
+                    }
+                    if (tech1.miner == "beaver") {
+                        techBeaver = techBeaver + tech1.effect;
+                    }
+                    if (tech1.miner == "sBeaver") {
+                        techSBeaver = techSBeaver + tech1.effect;
+                    }
+                    if (tech1.miner == "gBeaver") {
+                        techGBeaver = techGBeaver + tech1.effect;
+                    }
+                    if (tech1.miner == "rBeaver") {
+                        techRBeaver = techRBeaver + tech1.effect;
+                    }
+
+
+                    tech1 = list.pop()
+                    document.getElementById("r0Name").innerHTML = tech1.name;
+                    document.getElementById("r0Cost").innerHTML = tech1.cost;
+                }
+            }
+            if (num == 1) {
+
+            }
+            if (num == 2) {
+
+            }
+            if (num == 3) {
+
+            }
+            if (num == 4) {
+
+            }
         }
 
 
@@ -166,35 +243,8 @@
                     <span id="logCount" class="toolTipText"></span>
                     <p>Logs&trade;: 
                         <span id="logs">0</span>
-                    </p>
-                    <span id="foodCount" class="toolTipText"></span>
-                    <p>Beaver Food: 
-                        <span id="food">0</span>
-                    </p>
-                    <span id="smartsCount" class="toolTipText"></span>
-                    <p>Beaver Smartz&trade;: 
-                        <span id="smart">0</span>
-                    </p>
-                    <span id="moneyCount" class="toolTipText"></span>
-                    <p>Money: 
-                        <span id="money">0</span>
-                    </p>
-                </div>
-                <!-- Management Stats -->
-                <div class="manage">
-                    <p style="font-weight: bold; border-bottom: 2px solid black;" >Management</p>
-                    <p>Sell logs:
-                        <span id="logPrice">0</span>
-                    </p>
-                    <button id="sellWood">
-                    Sell those Logs!
-                    </button>
                     <p>Logs per second:
                         <span id="logsS">0</span><br />
-                        Food consumed per second:
-                        <span id="foodEat">0</span><br />
-                        Food Produced per second:
-                        <span id="foodP">0</span><br /> 
                     </p>
                 </div>
             </div>
@@ -255,11 +305,11 @@
             <div class="column middle2">
                 <p style="font-weight: bold; border-bottom: 2px solid black;" >Technologies</p>
                 <div class="column rl">
-                    <button class="techButton" id="r1Name" onclick="buyTechnology(0)" style="vertical-align: 20%">All the Caffeine (improve Human Workers by X amount)<br /> 100 Wood </button><br /><br />
-                    <button class="techButton" id="r2Name" onclick="buyTechnology(1)" style="vertical-align: 20%">Genetically Modified Beavers..? (unlocks Genetically Modified Beavers)<br /> 200 Wood </button><br /><br />
-                    <button class="techButton" id="r3Name" onclick="buyTechnology(2)" style="vertical-align: 20%">Pick the best ones, trust me (Unlocks selectively bred Beavers)<br /> 300 Wood </button><br /><br />
-                    <button class="techButton" id="r4Name" onclick="buyTechnology(3)" style="vertical-align: 20%">These Beavers are Metal (unlocks Cyborg Beavers)<br /> 400 Wood </button><br /><br />
-                    <button class="techButton" id="r5Name" onclick="buyTechnology(4)" style="vertical-align: 20%">I know a guy (improve $X per 1 Log)<br /> 500 Wood </button><br /><br />
+                    <button class="techButton" id="0Name" onclick="buyTechnology(0)" style="vertical-align: 20%"><span id="r0Name"> </span><br /> <span id="r0Cost"> </span> Wood</button><br /><br />
+                    <button class="techButton" id="1Name" onclick="buyTechnology(1)" style="vertical-align: 20%"><span id="r1Name"> </span><br /> <span id="r1Cost"> </span> </button><br /><br />
+                    <button class="techButton" id="2Name" onclick="buyTechnology(2)" style="vertical-align: 20%"><span id="r2Name"> </span><br /> <span id="r2Cost"> </span> </button><br /><br />
+                    <button class="techButton" id="3Name" onclick="buyTechnology(3)" style="vertical-align: 20%"><span id="r3Name"> </span><br /> <span id="r3Cost"> </span> </button><br /><br />
+                    <button class="techButton" id="4Name" onclick="buyTechnology(4)" style="vertical-align: 20%"><span id="r4Name"> </span><br /> <span id="r4Cost"> </span> </button><br /><br />
                 </div>
             </div> 
             <div class="column right">
