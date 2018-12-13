@@ -99,6 +99,8 @@
     <Content Include="MasterProduct.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="Store.aspx" />
+    <Content Include="tester.aspx" />
+    <Content Include="ViewCart.aspx" />
     <Content Include="wwwroot\css\gameStyle.css" />
     <Content Include="wwwroot\css\images\testPic.png" />
     <Content Include="wwwroot\css\styles.css" />
@@ -127,6 +129,24 @@
     <Compile Include="Account.aspx.designer.cs">
       <DependentUpon>Account.aspx</DependentUpon>
     </Compile>
+    <Compile Include="architecture\asdf.cs" />
+    <Compile Include="tester.aspx.cs">
+      <DependentUpon>tester.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tester.aspx.designer.cs">
+      <DependentUpon>tester.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCart.aspx.cs">
+      <DependentUpon>ViewCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCart.aspx.designer.cs">
+      <DependentUpon>ViewCart.aspx</DependentUpon>
+    </Compile>
+    <Content Include="architecture\ShoppingCart.cs" />
+    <Content Include="architecture\CartItem.cs" />
+    <Content Include="architecture\Product.cs" />
     <Compile Include="architecture\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -226,6 +246,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="Shared\" />
   </ItemGroup>
   <PropertyGroup>
