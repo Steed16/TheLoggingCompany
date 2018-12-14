@@ -20,12 +20,17 @@
 </head>
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
-    <div class="form">
+    <div class="contentSignIn">
+        <h3 style="font-weight: bold; border-bottom: 2px solid black;">Sign in or Register</h3>
+    </div>
+    <div class="form" style="background-color: white;">
         <form id="form2" runat="server">
             <div>
+            <br />
                 <label for="userName" id="userNameid" runat="server">Username:</label>
                 <input type="text" id="userNameinput" name="userName" runat="server" />
             </div>
+            <br />
             <div>
                 <label for="password" id="passwordid" runat="server">Password:</label>
                 <input type="text" id="passwordInput" name="password" runat="server" />
@@ -33,7 +38,7 @@
             <br />
             <input type="submit" id="submit" name="submit" value="Press it!" />
             <input type="submit" id="forgot" name="forgotpass" value="Forgot Passward"/>
-            <h5   ></h5>
+            <h5></h5>
             <input type="submit" id="new" name="new"  formaction ="/CRUD.aspx" value ="Register Now"/>
     </form>
     </div> 

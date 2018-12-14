@@ -52,8 +52,8 @@
 <body>
     <template:navControl id="navHtml" asdf="Default.aspx" runat="server" />
     <div class="form" style="background-color: white;">
-        <div class="contactTitle">
-            <h3 style="text-align: center; font-weight: bold;">Tell us how we're doing!</h3>
+        <div class="contentContact">
+            <h3 style="font-weight: bold; border-bottom: 2px solid black;">Tell us how we're doing!</h3>
         </div>
         <form style="text-align: left; padding-left: 130px;" id="form2" runat="server">    
 
