@@ -53,19 +53,19 @@
         var techGBeaver = 0;
         var techRBeaver = 0;
 
-        //Tech List
-        var list = [
-            { name: 'All the Caffeine (improve Humans by 10%)', effect: .1, cost: 1, miner: human },
-            { name: 'You actually hiring Beavers? (Yes, you can hire Beavers now)', effect: true, cost: 1, miner: beaver },
-            { name: 'Pick the best ones, trust me (Unlocks selectively bred Beavers)', effect: true, cost: 1, miner: sBeaver },
-            { name: 'Genetically Modified Beavers..? (unlocks Genetically Modified Beavers)', effect: true, cost: 1, miner: gBeaver },
-            { name: 'These Beavers are Metal (unlocks Cyborg Beavers)', effect: true, cost: 1, miner: rBeaver },
-            { name: 'Increase Beavers working (improve Beavers by 10%)', effect: .1, cost: 1, miner: beaver },
-            { name: 'Increase Selectively Beavers working (improve Selectively Bred Beavers by 10%)', effect: .1, cost: 1, miner: sBeaver },
-            { name: 'Increase Genetically Modified Beavers working (improve Genetically Modified Beavers by 10%)', effect: .1, cost: 1, miner: gBeaver },
-            { name: 'Increase CYBORG Beavers working (improve CYBORG Beavers by 10%)', effect: .1, cost: 1, miner: rBeaver },
-        ];
-        list.reverse();
+        ////Tech List
+        //var list = [
+        //    { name: 'All the Caffeine (improve Humans by 10%)', effect: .1, cost: 1, miner: human },
+        //    { name: 'You actually hiring Beavers? (Yes, you can hire Beavers now)', effect: true, cost: 1, miner: beaver },
+        //    { name: 'Pick the best ones, trust me (Unlocks selectively bred Beavers)', effect: true, cost: 1, miner: sBeaver },
+        //    { name: 'Genetically Modified Beavers..? (unlocks Genetically Modified Beavers)', effect: true, cost: 1, miner: gBeaver },
+        //    { name: 'These Beavers are Metal (unlocks Cyborg Beavers)', effect: true, cost: 1, miner: rBeaver },
+        //    { name: 'Increase Beavers working (improve Beavers by 10%)', effect: .1, cost: 1, miner: beaver },
+        //    { name: 'Increase Selectively Beavers working (improve Selectively Bred Beavers by 10%)', effect: .1, cost: 1, miner: sBeaver },
+        //    { name: 'Increase Genetically Modified Beavers working (improve Genetically Modified Beavers by 10%)', effect: .1, cost: 1, miner: gBeaver },
+        //    { name: 'Increase CYBORG Beavers working (improve CYBORG Beavers by 10%)', effect: .1, cost: 1, miner: rBeaver },
+        //];
+        //list.reverse();
 
         function chopLog(num1, num2, num3, num4, num5) {
             numLogs = numLogs + num1 + num2 + num3 + num4 + num5;
@@ -305,7 +305,7 @@
                     </button>
                 </div>
             </div>
-            <div class="column middle2">
+            @*<div class="column middle2">
                 <p style="font-weight: bold; border-bottom: 2px solid black;">Technologies</p>
                 <div class="column rl">
                     <button class="techButton" id="0Name" onclick="buyTechnology(0)" style="vertical-align: 20%"><span id="r0Name"> </span><br /> <span id="r0Cost"> </span> Wood</button><br /><br />
@@ -314,7 +314,7 @@
                     <button class="techButton" id="3Name" onclick="buyTechnology(3)" style="vertical-align: 20%"><span id="r3Name"> </span><br /> <span id="r3Cost"> </span> </button><br /><br />
                     <button class="techButton" id="4Name" onclick="buyTechnology(4)" style="vertical-align: 20%"><span id="r4Name"> </span><br /> <span id="r4Cost"> </span> </button><br /><br />
                 </div>
-            </div>
+            </div>*@
             <div class="column right">
                 <p style="font-weight: bold; border-bottom: 2px solid black;">Pay To Win!</p>
                 <a class="button" id="coins100" style="vertical-align: 20%" href="MasterProduct.aspx?id=15">CRAFTCOINS: 100<br /> $10 </a>
@@ -331,4 +331,3 @@
     </div>
     <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
 </div>
-</html>

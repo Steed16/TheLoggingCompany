@@ -22,7 +22,7 @@
         //numLogs++;
         //document.getElementById("logs").innerHTML = numLogs;
         //
-        //
+        //This is where I found the beaver gifs.  I not make these
         //https://www.deviantart.com/wanyo/art/Tainted-Tali-Beaver-Walk-Animation-656823674
         //https://www.deviantart.com/wanyo/art/Tainted-Tali-Beaver-Sleep-Animation-656824203
         //https://www.deviantart.com/wanyo/art/Tainted-Tali-Beaver-Wag-Animation-656824517
@@ -50,26 +50,33 @@
         var unlockGBeaver = false;
         var unlockRBeaver = false;
 
-        //Tech modifiers
-        var techHuman = 0;
-        var techBeaver = 0;
-        var techSBeaver = 0;
-        var techGBeaver = 0;
-        var techRBeaver = 0;
+        ////Tech modifiers
+        //var techHuman = 0;
+        //var techBeaver = 0;
+        //var techSBeaver = 0;
+        //var techGBeaver = 0;
+        //var techRBeaver = 0;
 
-        //Tech List
-        var list = [
-            { name: 'All the Caffeine (improve Humans by 10%)', effect: .1, cost: 1, miner: human },
-            { name: 'You actually hiring Beavers? (Yes, you can hire Beavers now)', effect: true, cost: 1, miner: beaver },
-            { name: 'Pick the best ones, trust me (Unlocks selectively bred Beavers)', effect: true, cost: 1, miner: sBeaver },
-            { name: 'Genetically Modified Beavers..? (unlocks Genetically Modified Beavers)', effect: true, cost: 1, miner: gBeaver },
-            { name: 'These Beavers are Metal (unlocks Cyborg Beavers)', effect: true, cost: 1, miner: rBeaver },            
-            { name: 'Increase Beavers working (improve Beavers by 10%)', effect: .1, cost: 1, miner: beaver },
-            { name: 'Increase Selectively Beavers working (improve Selectively Bred Beavers by 10%)', effect: .1, cost: 1, miner: sBeaver },
-            { name: 'Increase Genetically Modified Beavers working (improve Genetically Modified Beavers by 10%)', effect: .1, cost: 1, miner: gBeaver },
-            { name: 'Increase CYBORG Beavers working (improve CYBORG Beavers by 10%)', effect: .1, cost: 1, miner: rBeaver },
-        ];
-        list.reverse();
+        //var tech1;
+        //var tech2;
+        //var tech3;
+        //var tech4;
+        //var tech5;
+
+
+        ////Tech List
+        //var list = [
+        //    { name: 'All the Caffeine (improve Humans by 10%)', effect: .1, cost: 1, miner: "human" },
+        //    { name: 'You actually hiring Beavers? (Yes, you can hire Beavers now)', effect: true, cost: 1, miner: "beaver" },
+        //    { name: 'Pick the best ones, trust me (Unlocks selectively bred Beavers)', effect: true, cost: 1, miner: "sBeaver" },
+        //    { name: 'Genetically Modified Beavers..? (unlocks Genetically Modified Beavers)', effect: true, cost: 1, miner: "gBeaver" },
+        //    { name: 'These Beavers are Metal (unlocks Cyborg Beavers)', effect: true, cost: 1, miner: "rBeaver" },            
+        //    { name: 'Increase Beavers working (improve Beavers by 10%)', effect: .1, cost: 1, miner: "beaver" },
+        //    { name: 'Increase Selectively Beavers working (improve Selectively Bred Beavers by 10%)', effect: .1, cost: 1, miner: "sBeaver" },
+        //    { name: 'Increase Genetically Modified Beavers working (improve Genetically Modified Beavers by 10%)', effect: .1, cost: 1, miner: "gBeaver" },
+        //    { name: 'Increase CYBORG Beavers working (improve CYBORG Beavers by 10%)', effect: .1, cost: 1, miner: "rBeaver" },
+        //];
+        //list.reverse();
         
        function chopLog(num1, num2, num3, num4, num5) {
            numLogs = numLogs + num1 + num2 + num3 + num4 + num5;
@@ -166,49 +173,73 @@
         // #endregion
 
 
-        function buyTechnology(num) {
+        //function buyTechnology(num) {
+            
+
+        //    if (num == 0) {
+        //        if (numLogs >= tech1.cost) {                   
+        //            if (tech1.effect == true) {
+        //                if (tech1.miner == "human") {
+        //                    document.getElementById("hhhuman").style.display = "block";
+        //                }
+        //                if (tech1.miner == "beaver") {
+        //                    document.getElementById("bbbeaver").style.display = "block";
+        //                }
+        //                if (tech1.miner == "sbeaver") {
+        //                    document.getElementById("ssbeaver").style.display = "block";
+        //                }
+        //                if (tech1.miner == "gbeaver") {
+        //                    document.getElementById("ggbeaver").style.display = "block";
+        //                }
+        //                if (tech1.miner == "rbeaver") {
+        //                    document.getElementById("ccbeaver").style.display = "block";
+        //                }
+        //            } else {
+        //                if (tech1.miner == "human") {
+        //                    techHuman = techHuman + tech1.effect;
+        //                }
+        //                if (tech1.miner == "beaver") {
+        //                    techBeaver = techBeaver + tech1.effect;
+        //                }
+        //                if (tech1.miner == "sBeaver") {
+        //                    techSBeaver = techSBeaver + tech1.effect;
+        //                }
+        //                if (tech1.miner == "gBeaver") {
+        //                    techGBeaver = techGBeaver + tech1.effect;
+        //                }
+        //                if (tech1.miner == "rBeaver") {
+        //                    techRBeaver = techRBeaver + tech1.effect;
+        //                }
+        //            }
 
 
-            if (num == 0) {
+        //            tech1 = list.pop()
+        //            document.getElementById("r0Name").innerHTML = tech1.name;
+        //            document.getElementById("r0Cost").innerHTML = tech1.cost;
+        //        }
+        //    }
+        //    if (num == 1) {
 
-                if (numLogs >= tech1.cost) {
+        //    }
+        //    if (num == 2) {
 
-                    if (tech1.miner == "human") {
-                        techHuman = techHuman + tech1.effect;
-                    }
-                    if (tech1.miner == "beaver") {
-                        techBeaver = techBeaver + tech1.effect;
-                    }
-                    if (tech1.miner == "sBeaver") {
-                        techSBeaver = techSBeaver + tech1.effect;
-                    }
-                    if (tech1.miner == "gBeaver") {
-                        techGBeaver = techGBeaver + tech1.effect;
-                    }
-                    if (tech1.miner == "rBeaver") {
-                        techRBeaver = techRBeaver + tech1.effect;
-                    }
+        //    }
+        //    if (num == 3) {
 
+        //    }
+        //    if (num == 4) {
 
-                    tech1 = list.pop()
-                    document.getElementById("r0Name").innerHTML = tech1.name;
-                    document.getElementById("r0Cost").innerHTML = tech1.cost;
-                }
-            }
-            if (num == 1) {
+        //    }
+        //}
+        var random_images_array = ["happy.gif", "sleeping.gif", "walking.gif"];
 
-            }
-            if (num == 2) {
-
-            }
-            if (num == 3) {
-
-            }
-            if (num == 4) {
-
-            }
+        function getRandomImage(imgAr, path) {
+            path = path || '/wwwroot/css/images/'; // default path here
+            var num = Math.floor( Math.random() * imgAr.length );
+            var img = imgAr[ num ];
+            var imgStr = '<img src="' + path + img + '" alt = "">';
+            document.write(imgStr); document.close();
         }
-
 
 
         window.setInterval(function () {
@@ -224,7 +255,27 @@
 	
         }, 1000);
 
+        //window.onload = function() {
+        //    initalize(tech1, tech2, tech3, tech4, tech5);
+        //};
 
+        //function initalize(tech1, tech2, tech3, tech4, tech5){
+        //    tech1 = list.pop()
+        //            document.getElementById("r0Name").innerHTML = tech1.name;
+        //            document.getElementById("r0Cost").innerHTML = tech1.cost;
+        //    tech2 = list.pop()
+        //            document.getElementById("r1Name").innerHTML = tech2.name;
+        //            document.getElementById("r1Cost").innerHTML = tech2.cost;
+        //    tech3 = list.pop()
+        //            document.getElementById("r2Name").innerHTML = tech3.name;
+        //            document.getElementById("r2Cost").innerHTML = tech3.cost;
+        //    tech4 = list.pop()
+        //            document.getElementById("r3Name").innerHTML = tech4.name;
+        //            document.getElementById("r3Cost").innerHTML = tech4.cost;
+        //    tech5 = list.pop()
+        //            document.getElementById("r4Name").innerHTML = tech5.name;
+        //            document.getElementById("r4Cost").innerHTML = tech5.cost;
+        //}
 
 
     </script>
@@ -252,65 +303,78 @@
             <!-- Production -->
                 <div class="production">
                     <p style="font-weight: bold; border-bottom: 2px solid black;" >Production</p>
-                    <span id="humanCount" class="toolTipText"></span>
-                    <p>Humans: 
-                        <span id="human">0</span><br />
-                        Cost:
-                        <span id="humanCost">10</span>
-                    </p>                  
-                    <button id="buyHuman" onclick="buyHuman()">
-                    Hire more humans
-                    </button>
+                    <div id ="hhhuman" style="display:block;">
+                        <span id="humanCount" class="toolTipText"></span>
+                        <p>Humans: 
+                            <span id="human">0</span><br />
+                            Cost:
+                            <span id="humanCost">10</span>
+                        </p>                  
+                        <button id="buyHuman" onclick="buyHuman()">
+                        Hire more humans
+                        </button>
+                    </div>
+                    <div id ="bbbeaver" style="display:block;">
+                        <span id="beaverCount" class="toolTipText"></span>
+                        <p>Beavers: 
+                            <span id="beaver">0</span><br />
+                            Cost:
+                            <span id="beaverCost">1000</span>
+                        </p>
+                        <button id="buyBeaver" onclick="buyBeaver()">
+                        Buy that Beaver
+                        </button>
+                    </div>
+                    <div id ="ssBeaver" style="display:block;">
+                        <span id="sBeaverCount" class="toolTipText"></span>
+                        <p>Selectively Bred Beavers: 
+                            <span id="sBeaver">0</span><br />
+                            Cost:
+                            <span id="sBeaverCost">5000</span>
+                        </p>
+                    
+                        <button id="buySBeaver" onclick="buySBeaver()">
+                        Buy Selectively Bred Beavers
+                        </button>
+                    </div>
 
-                    <span id="beaverCount" class="toolTipText"></span>
-                    <p>Beavers: 
-                        <span id="beaver">0</span><br />
-                        Cost:
-                        <span id="beaverCost">1000</span>
-                    </p>
-                    <button id="buyBeaver" onclick="buyBeaver()">
-                    Buy that Beaver
-                    </button>
+                    <div id ="ggBeaver" style="display:block;">
+                        <span id="gBeaverCount" class="toolTipText"></span>
+                        <p>Genetically Modified Beavers: 
+                            <span id="gBeaver">0</span><br />
+                            Cost:
+                            <span id="gBeaverCost">10000</span>
+                        </p>
+                        <button id="buyGBeaver" onclick="buyGBeaver()">
+                        Buy Genetically Modified Beaver
+                        </button>
+                    </div>
+                    <div id ="rrBeaver" style="display:block;">
+                        <span id="rBeaverCount" class="toolTipText"></span>
+                        <p>CYBORG BEAVERS: 
+                            <span id="rBeaver">0</span><br />
+                            Cost:
+                            <span id="rBeaverCost">100000</span>
+                        </p>
+                        <button id="buyRBeaver" onclick="buyRBeaver()">
+                        Buy Genetically Modified Beaver
+                        </button>
+                    </div>
 
-                    <span id="sBeaverCount" class="toolTipText"></span>
-                    <p>Selectively Bred Beavers: 
-                        <span id="sBeaver">0</span><br />
-                        Cost:
-                        <span id="sBeaverCost">5000</span>
-                    </p>
-                    <button id="buySBeaver" onclick="buySBeaver()">
-                    Buy Selectively Bred Beavers
-                    </button>
-
-                    <span id="gBeaverCount" class="toolTipText"></span>
-                    <p>Genetically Modified Beavers: 
-                        <span id="gBeaver">0</span><br />
-                        Cost:
-                        <span id="gBeaverCost">10000</span>
-                    </p>
-                    <button id="buyGBeaver" onclick="buyGBeaver()">
-                    Buy Genetically Modified Beaver
-                    </button>
-                    <span id="rBeaverCount" class="toolTipText"></span>
-                    <p>CYBORG BEAVERS: 
-                        <span id="rBeaver">0</span><br />
-                        Cost:
-                        <span id="rBeaverCost">100000</span>
-                    </p>
-                    <button id="buyRBeaver" onclick="buyRBeaver()">
-                    Buy Genetically Modified Beaver
-                    </button>
                 </div>
                 </div>
             <div class="column middle2">
-                <p style="font-weight: bold; border-bottom: 2px solid black;" >Technologies</p>
-                <div class="column rl">
+                <%--<p style="font-weight: bold; border-bottom: 2px solid black;" >Technologies</p>--%>
+                <div id="image">
+                    <script type="text/javascript">getRandomImage(random_images_array);</script>
+                </div>
+                <%--<div class="column rl">
                     <button class="techButton" id="0Name" onclick="buyTechnology(0)" style="vertical-align: 20%"><span id="r0Name"> </span><br /> <span id="r0Cost"> </span> Wood</button><br /><br />
                     <button class="techButton" id="1Name" onclick="buyTechnology(1)" style="vertical-align: 20%"><span id="r1Name"> </span><br /> <span id="r1Cost"> </span> </button><br /><br />
                     <button class="techButton" id="2Name" onclick="buyTechnology(2)" style="vertical-align: 20%"><span id="r2Name"> </span><br /> <span id="r2Cost"> </span> </button><br /><br />
                     <button class="techButton" id="3Name" onclick="buyTechnology(3)" style="vertical-align: 20%"><span id="r3Name"> </span><br /> <span id="r3Cost"> </span> </button><br /><br />
                     <button class="techButton" id="4Name" onclick="buyTechnology(4)" style="vertical-align: 20%"><span id="r4Name"> </span><br /> <span id="r4Cost"> </span> </button><br /><br />
-                </div>
+                </div>--%>
             </div> 
             <div class="column right">
                 <p style="font-weight: bold; border-bottom: 2px solid black;" >Pay To Win!</p>
