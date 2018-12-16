@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-LoggingCompanyCore-3EB74FF3-50EC-42FB-A20B-DCA5BEA2978C</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\images\blankImage.png" />
+    <Content Include="wwwroot\images\ChadTshirt_Back.jpg" />
+    <Content Include="wwwroot\images\ChadTshirt_front.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.6" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
