@@ -111,9 +111,6 @@
     <Content Include="About_Dustin.aspx" />
     <Content Include="About_Nick.aspx" />
     <Content Include="About_Zeke.aspx" />
-    <Content Include="wwwroot\css\images\ChadTshirt_Back.jpg" />
-    <Content Include="wwwroot\css\images\ChadTshirt_front.jpg" />
-    <Content Include="wwwroot\css\images\blankImage.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">

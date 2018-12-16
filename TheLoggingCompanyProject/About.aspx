@@ -23,7 +23,7 @@
     
     <div class="content">
         <div id ="about">
-            <h3 style="font-weight: bold; border-bottom: 2px solid black;">About the Creators</h3>
+            <h3 style="font-weight: bold; border-bottom: 2px solid black;;">About the Creators</h3>
             <div class="bio">
                 <p>The website was created by four university students through the time span of approxmitely 
                     four months. Following the guidelines for the project by connecting to a database, using 

@@ -67,7 +67,8 @@ section {
   </header>
  
   <figure>
-    <img src="/wwwroot/css/images/blankImage.png" alt="BlankImage" runat="server" />
+    <img src="/wwwroot/css/images/ChadTshirt_front.jpg" alt="tshirt image" class="productPic"/>
+    <img src="/wwwroot/css/images/ChadTshirt_Back.jpg" alt="Back tshirt image" class="productPic"/>
   </figure>
             
  
@@ -79,8 +80,8 @@ section {
     <details>
     <summary>Product Features</summary>
           <ul>
-            <li>Impress your friends</li>
-            <li>It'll give you popularity</li>
+            <li>Impress your friends with this awesome shirt</li>
+            <li>It'll give you clout</li>
             <li>It will improve your life drastically</li>
         </ul>
     </details>

@@ -41,7 +41,7 @@
             </div> 
             <div class="personalLink">
                 <h3 style="font-weight: bold;">Linkedin:</h3> 
-                <asp:Hyperlink id="nickLink" NavigateURl="https://www.linkedin.com/in/nrebollo/" text="Linkedin" runat="server" />
+                <p>https://www.linkedin.com/in/nrebollo/</p>
             </div>
         </div>
     </div>
