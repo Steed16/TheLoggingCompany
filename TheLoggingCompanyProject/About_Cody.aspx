@@ -31,11 +31,11 @@
             <p>My contribution to the website is all over.  I helped pioneer the early look of the site.  Organized the backend structure.  Helped design and made the game.  Set up Home page.  Made validation for the contact page. </p>
         </div>
         <div>
-            <img src="/wwwroot/css/images/blankImage.png" alt="blankImage" class="responsive"/>
+
         </div> 
         <div class="personalLink">
             <h3 style="font-weight: bold;">Linkedin:</h3> 
-            <p>Link here</p>
+            <p>https://www.linkedin.com/in/cbweiland/</p>
         </div>
     </div>
 </div>
