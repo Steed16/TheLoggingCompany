@@ -26,7 +26,7 @@ namespace TheLoggingCompanyProject
 
                     string sqlquery = "SELECT * FROM logger.Product WHERE Id = " + value;
                     string imageSource = "";
-                    string imageSource1 = "";
+                    //string imageSource1 = "";
 
                     SqlCommand command = new SqlCommand(sqlquery, cnn);
                     SqlDataReader sReader;
@@ -40,17 +40,19 @@ namespace TheLoggingCompanyProject
                         price1 = sReader["Price"].ToString();
                     }
 
-                    if (title1 == "Chad Shirt")
-                    {
-                        imageSource = "/wwwroot/css/images/ChadShirt.png";
-                    }
-                    else
-                    {
-                        imageSource = "/wwwroot/css/images/coins.gif";
-                    }
+                    
 
                     title.InnerHtml = title1;
                     price.InnerHtml = price1;
+
+                    if (value == 23)
+                    {
+                        imageSource = "/wwwroot/css/images/ChadShirt.png";
+                    }
+                    if (value != 23)
+                    {
+                        imageSource = "/wwwroot/css/images/coins.gif";
+                    }
                     imageProduct.Src = imageSource;
                     cnn.Close();
                 }

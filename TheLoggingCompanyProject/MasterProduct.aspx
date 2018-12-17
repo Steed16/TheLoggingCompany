@@ -17,9 +17,9 @@ html {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(50%,#ffffff));
   background: -webkit-linear-gradient(top, #f3f3f3 0%,#ffffff 50%);
   background: -o-linear-gradient(top, #f3f3f3 0%,#ffffff 50%);
-  background: -ms-linear-gradient(top, #f3f3f3 0%,#ffffff 50%);
+  /*background: -ms-linear-gradient(top, #f3f3f3 0%,#ffffff 50%);*/
   background: linear-gradient(top, #f3f3f3 0%,#ffffff 50%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#ffffff',GradientType=0 );
+  /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#ffffff',GradientType=0 );*/
 }
 .wrapper {
   width: 650px;

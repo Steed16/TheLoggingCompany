@@ -26,17 +26,17 @@
      
         <div class="Dustin_bio">
             <h3 style="text-align: center; font-weight: bold;">Dustin S.</h3>
-            <p>Dustin needs to write up his bio. Place it here. Maybe first paragraph is current academic info like
-                    the current graduation year, major/minor, college activities you're involved in.</p>
-            <p>Next paragraph could be work experience, personal website, linkedin profile, etc..</p>
-            <p>You're responisbility in creating the website.</p>
+            <p>Hi I'm Dustin. I am a Junior at Concordia College where I am Studying Computer Science.
+                    Besides the college life, I play video games and DESTROY ALL OTHER PEOPLE THAT CHALLENGE ME!</p>
+            <p>I have had an internship at Sanford IT where I was writing code for them and helping on projects.</p>
+            <p>I created the base of the CSS and did the database connection to pull info from the database. I also created the shop and the master prodcut page</p>
         </div>
         <div>
-            <img src="/wwwroot/css/images/blankImage.png" alt="blankImage" class="responsive"/>
+            
         </div> 
         <div class="personalLink">
             <h3 style="font-weight: bold;">Linkedin:</h3> 
-            <p>Link here</p>
+            <p>www.linkedin.com/Steed16</p>
         </div>
     </div>
 </div>
