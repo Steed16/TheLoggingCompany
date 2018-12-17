@@ -48,13 +48,14 @@ namespace TheLoggingCompanyProject
                     if (value == 23)
                     {
                         imageSource = "/wwwroot/css/images/ChadTshirt_front.jpg";
-                        imageSource1 = "/wwwroot/css/images/ChadTshirt_back.jpg";
+                        imageSource1 = "/wwwroot/css/images/ChardTshirt_Back.jpg";
                     }
                     if (value != 23)
                     {
                         imageSource = "/wwwroot/css/images/coins.gif";
                     }
                     imageProduct.Src = imageSource;
+                    imageProduct1.Src = imageSource1;
                     cnn.Close();
                 }
                 catch (Exception ex)

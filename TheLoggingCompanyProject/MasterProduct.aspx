@@ -68,7 +68,7 @@ section {
  
   <figure>
     <img id="imageProduct" src="" class="productPic" runat="server"/>
-    <img id="imageProduct1" src="/wwwroot/css/images/ChadTshirt_Back.jpg" class="productPic" runat="server"/>
+    <img id="imageProduct1" src="" class="productPic" runat="server"/>
   </figure>
             
  
