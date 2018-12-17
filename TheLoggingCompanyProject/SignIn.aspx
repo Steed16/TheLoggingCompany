@@ -34,7 +34,7 @@
             <input type="submit" id="submit" name="submit" value="Press it!" />
             <input type="submit" id="forgot" name="forgotpass" value="Forgot Passward"/>
             <h5   ></h5>
-            <input type="submit" id="new" name="new"  formaction ="/CRUD.aspx" value ="Register Now"/>
+            <input type="submit" id="new" name="new"  formaction ="#" value ="Register Now"/>
     </form>
     </div> 
     <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
