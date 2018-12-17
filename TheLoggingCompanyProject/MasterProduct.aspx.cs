@@ -26,7 +26,7 @@ namespace TheLoggingCompanyProject
 
                     string sqlquery = "SELECT * FROM logger.Product WHERE Id = " + value;
                     string imageSource = "";
-                    //string imageSource1 = "";
+                    string imageSource1 = "";
 
                     SqlCommand command = new SqlCommand(sqlquery, cnn);
                     SqlDataReader sReader;
@@ -47,7 +47,8 @@ namespace TheLoggingCompanyProject
 
                     if (value == 23)
                     {
-                        imageSource = "/wwwroot/css/images/ChadShirt.png";
+                        imageSource = "/wwwroot/css/images/ChadTshirt_front.jpg";
+                        imageSource1 = "/wwwroot/css/images/ChadTshirt_back.jpg";
                     }
                     if (value != 23)
                     {

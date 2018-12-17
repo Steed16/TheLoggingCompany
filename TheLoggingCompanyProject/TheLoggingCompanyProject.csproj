@@ -100,6 +100,8 @@
     <Content Include="SignIn.aspx" />
     <Content Include="Store.aspx" />
     <Content Include="wwwroot\css\gameStyle.css" />
+    <Content Include="wwwroot\css\images\ChadTshirt_front.jpg" />
+    <Content Include="wwwroot\css\images\ChardTshirt_Back.jpg" />
     <Content Include="wwwroot\css\images\coins.gif" />
     <Content Include="wwwroot\css\images\happy.gif" />
     <Content Include="wwwroot\css\images\sleeping.gif" />
