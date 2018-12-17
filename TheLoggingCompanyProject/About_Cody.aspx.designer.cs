@@ -19,7 +19,7 @@ namespace TheLoggingCompanyProject {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::TheLoggingCompanyProject.architecture.Nav navHtml;
+        //protected global::TheLoggingCompanyProject.architecture.Nav navHtml;
         
         /// <summary>
         /// footerHtml control.
@@ -28,6 +28,6 @@ namespace TheLoggingCompanyProject {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::TheLoggingCompanyProject.architecture.Footer footerHtml;
+        //protected global::TheLoggingCompanyProject.architecture.Footer footerHtml;
     }
 }
