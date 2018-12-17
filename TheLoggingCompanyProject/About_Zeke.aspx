@@ -26,18 +26,13 @@
         
         <div class="Zeke_bio">
             <h3 style="text-align: center; font-weight: bold;">Zeke T.</h3>
-            <p>Zeke needs to write up his bio. Place it here. Maybe first paragraph is current academic info like
-                    the current graduation year, major/minor, college activities you're involved in.</p>
-            <p>Next paragraph could be work experience, personal website, linkedin profile, etc..</p>
-            <p>You're responisbility in creating the website.</p>
+            <p>A second year student, Ezekiel plans to graduate after first semester in the 2019-2020 school year. Looking to working the cybersecurity industry, he plans on attending the University of Minnesota's Masters in Security Technologies program. Ezekiel is passionate about his hobbies of coding, singing, gaming and music production.</p>
+            <p href = "ezekieltown.net">Ezekiel's personal website</p>
+            <p>Focused on security Ezekiel's job was to get the website secure whilst also aiding the group in completing the class assignments </p>
         </div>
         <div>
             <img src="/wwwroot/css/images/blankImage.png" alt="blankImage" class="responsive"/>
         </div> 
-        <div class="personalLink">
-            <h3 style="font-weight: bold;">Linkedin:</h3> 
-            <p>Link here</p>
-        </div>
     </div>
 </div>
     <template:footerControl id="footerHtml" asdf="Default.aspx" runat="server" />
