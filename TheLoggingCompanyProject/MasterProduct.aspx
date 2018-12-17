@@ -67,8 +67,8 @@ section {
   </header>
  
   <figure>
-    <img src="/wwwroot/css/images/ChadTshirt_front.jpg" alt="tshirt image" class="productPic"/>
-    <img src="/wwwroot/css/images/ChadTshirt_Back.jpg" alt="Back tshirt image" class="productPic"/>
+    <img id="imageProduct" src="" class="productPic" runat="server"/>
+    <img id="imageProduct1" src="/wwwroot/css/images/ChadTshirt_Back.jpg" class="productPic" runat="server"/>
   </figure>
             
  
